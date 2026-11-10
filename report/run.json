@@ -1,0 +1,37 @@
+{
+  "commit": "79a8a8d",
+  "platform": "macos",
+  "config": {
+    "window": "MarkTheCrab",
+    "screenshot_proof": true
+  },
+  "scripts": [
+    {
+      "name": "font-picker-escape",
+      "script": "smoke/a-font-picker-escape.json",
+      "folder": "01_font-picker-escape",
+      "status": "PASS",
+      "attempts": 1,
+      "seconds": 27.03
+    },
+    {
+      "name": "b-deliberately-broken",
+      "script": "smoke/b-broken.json",
+      "folder": "02_b-deliberately-broken",
+      "status": "FAIL",
+      "attempts": 1,
+      "failure": {
+        "phase": 5,
+        "reason": "element not found: done (name 'Done and dusted')"
+      },
+      "seconds": 23.47
+    }
+  ],
+  "started_at": "2026-11-09T14:01:47-08:00",
+  "finished_at": "2026-11-09T14:02:37-08:00",
+  "seconds": 50.0,
+  "totals": {
+    "PASS": 1,
+    "FAIL": 1
+  }
+}

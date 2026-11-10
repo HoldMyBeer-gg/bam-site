@@ -1,0 +1,14 @@
+{
+  "name": "font-picker-escape",
+  "script": "smoke/a-font-picker-escape.json",
+  "platform": "macos",
+  "status": "PASS",
+  "screenshots": [
+    "phase-1.png",
+    "phase-2.png",
+    "phase-3.png",
+    "phase-4.png",
+    "phase-5.png"
+  ],
+  "seconds": 27.03
+}

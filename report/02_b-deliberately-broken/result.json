@@ -1,0 +1,18 @@
+{
+  "name": "b-deliberately-broken",
+  "script": "smoke/b-broken.json",
+  "platform": "macos",
+  "status": "FAIL",
+  "failure": {
+    "phase": 5,
+    "reason": "element not found: done (name 'Done and dusted')"
+  },
+  "screenshots": [
+    "phase-1.png",
+    "phase-2.png",
+    "phase-3.png",
+    "phase-4.png"
+  ],
+  "fail_screenshot": "fail.png",
+  "seconds": 23.47
+}
