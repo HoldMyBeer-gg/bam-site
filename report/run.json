@@ -22,7 +22,8 @@
       "attempts": 1,
       "failure": {
         "phase": 5,
-        "reason": "element not found: done (name 'Done and dusted')"
+        "reason": "element not found: done (name 'Done and dusted')",
+        "action": "learn"
       },
       "seconds": 23.47
     }

@@ -5,7 +5,8 @@
   "status": "FAIL",
   "failure": {
     "phase": 5,
-    "reason": "element not found: done (name 'Done and dusted')"
+    "reason": "element not found: done (name 'Done and dusted')",
+    "action": "learn"
   },
   "screenshots": [
     "phase-1.png",
@@ -14,5 +15,96 @@
     "phase-4.png"
   ],
   "fail_screenshot": "fail.png",
-  "seconds": 23.47
+  "seconds": 23.47,
+  "phases": [
+    {
+      "name": "Click “Settings”",
+      "steps": [
+        {
+          "text": "Click “Settings”"
+        },
+        {
+          "text": "“Preview font” appears",
+          "expect": true
+        }
+      ],
+      "checks": [],
+      "status": "PASS"
+    },
+    {
+      "name": "Read “Preview font” (saved as before)",
+      "steps": [
+        {
+          "text": "Read “Preview font” (saved as before)"
+        },
+        {
+          "text": "Click “Preview font”"
+        },
+        {
+          "text": "“Choose a font…” appears",
+          "expect": true
+        }
+      ],
+      "checks": [],
+      "status": "PASS"
+    },
+    {
+      "name": "Click “Choose a font…”",
+      "steps": [
+        {
+          "text": "Click “Choose a font…”"
+        },
+        {
+          "text": "“Search fonts” appears",
+          "expect": true
+        }
+      ],
+      "checks": [],
+      "status": "PASS"
+    },
+    {
+      "name": "Type \"Geo\" into “Search fonts”",
+      "steps": [
+        {
+          "text": "Type \"Geo\" into “Search fonts”"
+        },
+        {
+          "text": "Pause 0.3 s",
+          "pause": true
+        },
+        {
+          "text": "Press Escape"
+        },
+        {
+          "text": "Pause 0.5 s",
+          "pause": true
+        }
+      ],
+      "checks": [],
+      "status": "PASS"
+    },
+    {
+      "name": "Click “Done and dusted”",
+      "steps": [
+        {
+          "text": "“Preview font” still reads the saved before",
+          "expect": true
+        },
+        {
+          "text": "Click “Done and dusted”"
+        },
+        {
+          "text": "Pause 0.3 s",
+          "pause": true
+        }
+      ],
+      "checks": [],
+      "status": "FAIL"
+    }
+  ],
+  "covers": "Settings > Preview font > Choose a font…: search, then Escape from inside the search box closes only the chooser and restores the dropdown (5914c34).",
+  "checks": [
+    "“Search fonts” is gone",
+    "“Done” is gone"
+  ]
 }

@@ -10,5 +10,96 @@
     "phase-4.png",
     "phase-5.png"
   ],
-  "seconds": 27.03
+  "seconds": 27.03,
+  "phases": [
+    {
+      "name": "Click “Settings”",
+      "steps": [
+        {
+          "text": "Click “Settings”"
+        },
+        {
+          "text": "“Preview font” appears",
+          "expect": true
+        }
+      ],
+      "checks": [],
+      "status": "PASS"
+    },
+    {
+      "name": "Read “Preview font” (saved as before)",
+      "steps": [
+        {
+          "text": "Read “Preview font” (saved as before)"
+        },
+        {
+          "text": "Click “Preview font”"
+        },
+        {
+          "text": "“Choose a font…” appears",
+          "expect": true
+        }
+      ],
+      "checks": [],
+      "status": "PASS"
+    },
+    {
+      "name": "Click “Choose a font…”",
+      "steps": [
+        {
+          "text": "Click “Choose a font…”"
+        },
+        {
+          "text": "“Search fonts” appears",
+          "expect": true
+        }
+      ],
+      "checks": [],
+      "status": "PASS"
+    },
+    {
+      "name": "Type \"Geo\" into “Search fonts”",
+      "steps": [
+        {
+          "text": "Type \"Geo\" into “Search fonts”"
+        },
+        {
+          "text": "Pause 0.3 s",
+          "pause": true
+        },
+        {
+          "text": "Press Escape"
+        },
+        {
+          "text": "Pause 0.5 s",
+          "pause": true
+        }
+      ],
+      "checks": [],
+      "status": "PASS"
+    },
+    {
+      "name": "Click “Done”",
+      "steps": [
+        {
+          "text": "“Preview font” still reads the saved before",
+          "expect": true
+        },
+        {
+          "text": "Click “Done”"
+        },
+        {
+          "text": "Pause 0.3 s",
+          "pause": true
+        }
+      ],
+      "checks": [],
+      "status": "PASS"
+    }
+  ],
+  "covers": "Settings > Preview font > Choose a font…: search, then Escape from inside the search box closes only the chooser and restores the dropdown (5914c34).",
+  "checks": [
+    "“Search fonts” is gone",
+    "“Done” is gone"
+  ]
 }
