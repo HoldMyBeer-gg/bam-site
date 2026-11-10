@@ -3,22 +3,23 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>BAM: Playwright for desktop apps | bad-ass-mcp</title>
-<meta name="description" content="bad-ass-mcp drives macOS, Windows and Linux apps through the OS accessibility tree, not screenshots. An AI explores your app once; BAM replays it as a test suite for free, with an HTML report.">
+<title>BAM: your desktop app, tested on autopilot | bad-ass-mcp</title>
+<meta name="description" content="Show an AI your desktop app once; BAM replays it as a test whenever you like, free, with a clear pass/fail report. It reads apps the way a screen reader does. Mac, Windows, Linux, Steam Deck.">
 <link rel="canonical" href="https://bam.holdmybeer.gg/">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://bam.holdmybeer.gg/">
-<meta property="og:title" content="BAM: Playwright for desktop apps">
-<meta property="og:description" content="An AI explores your desktop app once through the accessibility tree. BAM replays it forever: no model, no tokens. macOS, Windows, Linux, Steam Deck.">
+<meta property="og:title" content="BAM: your desktop app, tested on autopilot">
+<meta property="og:description" content="Show an AI your app once. BAM replays it as a test, free, every time. Reads apps the way a screen reader does. Mac, Windows, Linux, Steam Deck.">
 <meta property="og:image" content="https://bam.holdmybeer.gg/media/among-us-wiring.jpg">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="BAM: Playwright for desktop apps">
-<meta name="twitter:description" content="An AI explores your desktop app once. BAM replays it forever, free. macOS, Windows, Linux, Steam Deck.">
+<meta name="twitter:title" content="BAM: your desktop app, tested on autopilot">
+<meta name="twitter:description" content="Show an AI your app once. BAM replays it as a test, free, every time.">
 <meta name="twitter:image" content="https://bam.holdmybeer.gg/media/among-us-wiring.jpg">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><rect width='16' height='16' fill='%23000'/><rect x='2' y='2' width='4' height='12' fill='%2321C842'/><rect x='6' y='2' width='4' height='12' fill='%235455ED'/><rect x='10' y='2' width='4' height='12' fill='%23FC5554'/></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=JetBrains+Mono:wght@400;600&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -27,130 +28,13 @@
   "alternateName": "BAM",
   "applicationCategory": "DeveloperApplication",
   "operatingSystem": "macOS, Windows, Linux",
-  "description": "MCP server and test runner that drives desktop apps through OS accessibility trees (AXUIElement, UI Automation, AT-SPI) instead of screenshots.",
+  "description": "Automated testing for desktop apps: an AI explores the app once through the operating system's accessibility interface (what screen readers use), and BAM replays it as a test suite with no AI in the loop.",
   "url": "https://bam.holdmybeer.gg/",
   "codeRepository": "https://github.com/HoldMyBeer-gg/bad-ass-mcp",
   "license": "https://opensource.org/licenses/MIT",
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
 }
 </script>
-<style>
-:root {
-  /* TMS9928A, the Coleco Adam's palette */
-  --black: #0b0b10;
-  --panel: #14141c;
-  --panel-2: #1c1c27;
-  --line: #2a2a38;
-  --text: #ececf2;
-  --muted: #a4a4b6;
-  --green: #21c842;
-  --lgreen: #5edc78;
-  --blue: #5455ed;
-  --lblue: #7d76fc;
-  --red: #fc5554;
-  --lred: #ff7978;
-  --cyan: #42ebf5;
-  --yellow: #d4c154;
-  --magenta: #c95bba;
-  --gutter: 16px;
-}
-* { box-sizing: border-box; }
-html { color-scheme: dark; }
-body {
-  margin: 0;
-  background: var(--black);
-  color: var(--text);
-  font: 17px/1.6 Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
-  -webkit-font-smoothing: antialiased;
-}
-a { color: var(--cyan); }
-code, pre { font-family: "JetBrains Mono", ui-monospace, Menlo, monospace; }
-.wrap { max-width: 1080px; margin: 0 auto; padding: 0 var(--gutter); }
-.bar { display: flex; height: 6px; }
-.bar span { flex: 1; }
-nav { display: flex; align-items: center; justify-content: space-between; padding: 18px 0; gap: 12px; flex-wrap: wrap; }
-@media (max-width: 520px) { nav .links a[href^='#'] { display: none; } }
-.logo { font-family: "Press Start 2P", monospace; font-size: 18px; color: var(--text); text-decoration: none; letter-spacing: 1px; }
-.logo b { color: var(--green); font-weight: 400; }
-nav .links { display: flex; gap: 18px; font-size: 15px; flex-wrap: wrap; }
-nav .links a { color: var(--muted); text-decoration: none; }
-nav .links a:hover { color: var(--text); }
-
-.hero > *, .split > *, .steps > *, .grid4 > *, .why > * { min-width: 0; }
-.hero { padding: 40px 0 24px; display: grid; gap: 36px; grid-template-columns: 1fr; }
-@media (min-width: 900px) { .hero { grid-template-columns: 5fr 6fr; align-items: center; padding-top: 56px; } }
-.kicker { font-family: "Press Start 2P", monospace; font-size: 11px; color: var(--yellow); letter-spacing: 1px; margin: 0 0 18px; line-height: 1.8; }
-h1 { font-size: clamp(36px, 6vw, 56px); line-height: 1.05; margin: 0 0 18px; font-weight: 800; letter-spacing: -1px; }
-h1 em { font-style: normal; color: var(--green); }
-.lede { color: var(--muted); font-size: 19px; margin: 0 0 26px; }
-.cta { display: flex; gap: 12px; flex-wrap: wrap; }
-.btn { display: inline-flex; align-items: center; gap: 8px; padding: 12px 18px; border-radius: 6px; font-weight: 600; text-decoration: none; font-size: 16px; }
-.btn.primary { background: var(--green); color: #031a08; }
-.btn.primary:hover { background: var(--lgreen); }
-.btn.ghost { border: 1px solid var(--line); color: var(--text); background: var(--panel); }
-.btn.ghost:hover { border-color: var(--lblue); }
-.install-line { margin-top: 18px; font-size: 14px; color: var(--muted); }
-.install-line code { color: var(--text); background: var(--panel); padding: 3px 8px; border-radius: 4px; border: 1px solid var(--line); }
-
-figure { margin: 0; }
-.video { border: 1px solid var(--line); border-radius: 10px; overflow: hidden; background: #000; box-shadow: 0 0 0 4px var(--panel), 0 20px 60px rgba(0,0,0,.6); }
-.video video, .video img { display: block; width: 100%; height: auto; }
-figcaption { font-size: 14px; color: var(--muted); margin-top: 12px; }
-figcaption strong { color: var(--text); }
-
-section { padding: 64px 0 8px; }
-h2 { font-size: clamp(26px, 4vw, 34px); margin: 0 0 10px; letter-spacing: -.5px; }
-h2 .n { font-family: "Press Start 2P", monospace; font-size: 14px; color: var(--green); margin-right: 10px; vertical-align: middle; }
-.sub { color: var(--muted); margin: 0 0 30px; max-width: 720px; }
-
-.steps { display: grid; gap: 16px; grid-template-columns: 1fr; }
-@media (min-width: 760px) { .steps { grid-template-columns: repeat(3, 1fr); } }
-.step { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 22px; position: relative; overflow: hidden; }
-.step::before { content: ""; position: absolute; inset: 0 0 auto 0; height: 4px; background: var(--c); }
-.step h3 { margin: 4px 0 8px; font-size: 19px; }
-.step p { margin: 0; color: var(--muted); font-size: 15.5px; }
-.step .tag { font-family: "Press Start 2P", monospace; font-size: 10px; color: var(--c); }
-.cost { margin-top: 10px; font-size: 14px; color: var(--text); }
-
-.split { display: grid; gap: 22px; grid-template-columns: 1fr; }
-@media (min-width: 900px) { .split { grid-template-columns: 1fr 1fr; align-items: start; } }
-pre { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 18px; overflow-x: auto; font-size: 13.5px; line-height: 1.55; margin: 0; }
-.k { color: var(--lblue); } .s { color: var(--lgreen); } .c { color: #6f6f86; } .p { color: var(--yellow); }
-.term { background: #050507; }
-.term .ok { color: var(--green); } .term .bad { color: var(--red); }
-.term .prog { letter-spacing: -1px; }
-
-.report-card { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 22px; }
-.report-card h3 { margin: 0 0 8px; }
-.report-card p { color: var(--muted); margin: 0 0 16px; font-size: 15.5px; }
-
-.grid4 { display: grid; gap: 14px; grid-template-columns: 1fr; }
-@media (min-width: 640px) { .grid4 { grid-template-columns: 1fr 1fr; } }
-@media (min-width: 980px) { .grid4 { grid-template-columns: repeat(4, 1fr); } }
-.tile { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 18px; }
-.tile h3 { margin: 0 0 6px; font-size: 17px; }
-.tile p { margin: 0; color: var(--muted); font-size: 14.5px; }
-.tile .api { font-family: "JetBrains Mono", monospace; font-size: 12.5px; color: var(--cyan); display: block; margin-bottom: 8px; }
-
-.why { display: grid; gap: 14px; grid-template-columns: 1fr; }
-@media (min-width: 760px) { .why { grid-template-columns: 1fr 1fr; } }
-.why .tile h3 { color: var(--text); }
-.why .tile h3::before { content: "■ "; color: var(--c, var(--green)); }
-
-.tabs { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 10px; }
-.tabs button { font: 600 14px Inter, system-ui, sans-serif; color: var(--muted); background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 8px 14px; cursor: pointer; }
-.tabs button[aria-selected="true"] { color: var(--black); background: var(--green); border-color: var(--green); }
-.tabpanel[hidden] { display: none; }
-
-.gifrow img { width: 100%; height: auto; border-radius: 10px; border: 1px solid var(--line); display: block; }
-
-.star { text-align: center; padding: 72px 0 40px; }
-.star h2 { margin-bottom: 14px; }
-.star p { color: var(--muted); margin: 0 auto 26px; max-width: 560px; }
-footer { border-top: 1px solid var(--line); padding: 26px 0 40px; color: var(--muted); font-size: 14px; }
-footer .wrap { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
-footer a { color: var(--muted); }
-</style>
 </head>
 <body>
 <div class="bar" aria-hidden="true">
@@ -162,7 +46,7 @@ footer a { color: var(--muted); }
     <a class="logo" href="/">B<b>A</b>M</a>
     <div class="links">
       <a href="#how">How it works</a>
-      <a href="#platforms">Platforms</a>
+      <a href="gallery/">Gallery</a>
       <a href="#install">Install</a>
       <a href="https://github.com/HoldMyBeer-gg/bad-ass-mcp">GitHub</a>
     </div>
@@ -170,58 +54,69 @@ footer a { color: var(--muted); }
 
   <header class="hero">
     <div>
-      <p class="kicker">BAD-ASS-MCP · MIT</p>
-      <h1>Playwright for <em>desktop apps</em>.</h1>
-      <p class="lede">An AI explores your app once through the operating system's accessibility tree. BAM replays it as a test suite forever: no model, no tokens, an HTML report with proof screenshots. macOS, Windows, Linux, and the Steam Deck.</p>
+      <p class="kicker">BAD-ASS-MCP · FREE &amp; OPEN SOURCE</p>
+      <h1>Your desktop app, <em>tested on autopilot</em>.</h1>
+      <p class="lede">Show an AI your app once. It learns the clicks, and BAM replays them as a test whenever you like: no AI, no cost, and a clear pass/fail report with screenshots of every step. Mac, Windows, Linux, and even the Steam Deck.</p>
       <div class="cta">
         <a class="btn primary" href="https://github.com/HoldMyBeer-gg/bad-ass-mcp">★ Star on GitHub</a>
         <a class="btn ghost" href="report/report.html">See a real report</a>
       </div>
-      <p class="install-line"><code>pip install bad-ass-mcp</code></p>
+      <p class="install-line"><code>pip install bad-ass-mcp</code> · Like Playwright, but for desktop apps.</p>
     </div>
     <figure>
       <div class="video">
-        <video src="media/among-us-wiring.mp4" poster="media/among-us-wiring.jpg" autoplay muted loop playsinline aria-label="Claude solving the Among Us Fix Wiring task on a Steam Deck"></video>
+        <img src="media/markthecrab-demo.gif" alt="bad-ass-mcp typing into the MarkTheCrab Markdown editor, finding each button by its name">
       </div>
-      <figcaption><strong>Steam Deck, Gaming Mode.</strong> Games have no accessibility tree, so Claude read the wire colours off a screenshot and connected them with bad-ass-mcp's <code>drag</code>. When the tree is there, it never needs the screenshot.</figcaption>
+      <figcaption><strong>No screenshots needed.</strong> bad-ass-mcp typing into <a href="https://github.com/HoldMyBeer-gg/MarkTheCrab">MarkTheCrab</a>, finding every button and text box by its name, and recording itself while it works. <a href="gallery/">More in the gallery →</a></figcaption>
     </figure>
   </header>
 
   <section id="how">
     <h2><span class="n">01</span>Explore once. Replay forever.</h2>
-    <p class="sub">Most computer-use tools send a screenshot to a vision model on every step. bad-ass-mcp reads the same tree screen readers use, so the expensive part only has to happen once.</p>
+    <p class="sub">The slow, expensive part (an AI figuring out your app) happens one time. Everything after that is a free, repeatable test.</p>
     <div class="steps">
       <div class="step" style="--c:var(--lblue)">
         <span class="tag">EXPLORE</span>
-        <h3>An AI drives the real app</h3>
-        <p>Claude, Codex, Gemini or a local model uses the MCP tools to find buttons by role and name, click, type, drag and check results.</p>
-        <p class="cost">Costs tokens. Once.</p>
+        <h3>An AI tries your app</h3>
+        <p>Claude, Codex, Gemini or a model on your own machine clicks around, types, opens menus and checks that things worked, just like a careful tester.</p>
+        <p class="cost">Costs a little AI time. Once.</p>
       </div>
       <div class="step" style="--c:var(--yellow)">
-        <span class="tag">SCRIPT</span>
-        <h3>The path becomes a BAM script</h3>
-        <p>Plain JSON: learn elements by name, run steps, check what happened. Per-platform values, setup commands, retries, readable diffs.</p>
-        <p class="cost">Lives in your repo.</p>
+        <span class="tag">SAVE</span>
+        <h3>It writes down what worked</h3>
+        <p>The path becomes a short script you can read: "click Insert emoji, type crab, press Enter, check the file saved". It lives next to your code.</p>
+        <p class="cost">Yours to keep and edit.</p>
       </div>
       <div class="step" style="--c:var(--green)">
         <span class="tag">REPLAY</span>
-        <h3><code>bad-ass-mcp run smoke/</code></h3>
-        <p>No model in the loop. Every script runs against the real app and writes a results folder with screenshots per phase and an HTML report.</p>
+        <h3>BAM runs it again, any time</h3>
+        <p>Before every release, after every change, on every computer you have. You get a report that says what passed, what failed, and shows you the screen at each step.</p>
         <p class="cost">Free. Every time.</p>
       </div>
     </div>
   </section>
 
   <section>
+    <h2><span class="n">02</span>It reads apps the way a screen reader does</h2>
+    <p class="sub">Every Mac, Windows and Linux app describes its buttons, menus and text boxes so blind and low-vision people can use it. bad-ass-mcp reads that same description. So it clicks "Save" because it knows which thing is the Save button, not because it guessed from the pixels.</p>
+    <div class="why">
+      <div class="tile" style="--c:var(--green)"><h3>Fast and cheap</h3><p>Reading a list of buttons is instant. Sending a screenshot to an AI on every step is slow and costs money.</p></div>
+      <div class="tile" style="--c:var(--lblue)"><h3>Doesn't break on a new look</h3><p>Change the theme, the font or the window size and the test still finds "Save". Pixel-based tests fall over.</p></div>
+      <div class="tile" style="--c:var(--yellow)"><h3>Good for accessibility, too</h3><p>If BAM can't find a button by name, a screen reader user can't either. Your tests quietly check that.</p></div>
+      <div class="tile" style="--c:var(--red)"><h3>Eyes only when it has to</h3><p>Games and 3D views don't describe themselves. There, it falls back to looking at the screen, like the <a href="gallery/">Among Us clip in the gallery</a>.</p></div>
+    </div>
+    <p class="small-tech">For the techies: macOS AXUIElement, Windows UI Automation, Linux AT-SPI2. Vision fallback via <code>screenshot</code>, <code>click_at</code> and <code>drag</code>.</p>
+  </section>
+
+  <section>
     <div class="split">
       <div>
-        <h2><span class="n">02</span>A script is just JSON</h2>
-        <p class="sub">This one checks a Markdown editor's emoji picker: open it, search, press Enter, save. The same file runs on Windows and Linux.</p>
+        <h2><span class="n">03</span>A test anyone can read</h2>
+        <p class="sub">This one checks a Markdown editor's emoji picker: open it, search for "crab", press Enter. The same file runs on Windows and Linux.</p>
 <pre><span class="c">// smoke/emoji-picker.json (trimmed)</span>
 {
   <span class="k">"name"</span>: <span class="s">"emoji-picker"</span>,
   <span class="k">"platforms"</span>: [<span class="s">"windows"</span>, <span class="s">"linux"</span>],
-  <span class="k">"launch"</span>: [<span class="s">"emoji.md"</span>],
   <span class="k">"phases"</span>: [
     {
       <span class="k">"learn"</span>: { <span class="k">"emoji"</span>: { <span class="k">"name"</span>: <span class="s">"Insert emoji"</span> } },
@@ -239,12 +134,13 @@ footer a { color: var(--muted); }
     }
   ]
 }</pre>
+        <p class="small-tech">Typo in a script? <code>bad-ass-mcp check</code> catches it before anything runs: <em>unknown key 'taget' (did you mean 'target'?)</em></p>
       </div>
       <div>
-        <h2><span class="n">03</span>Run it, get a report</h2>
-        <p class="sub">A progress bar in the Coleco Adam's palette, one line per script, and a results folder you can attach to a bug. This is the real output of the run behind the report below.</p>
+        <h2><span class="n">04</span>A report you'll actually read</h2>
+        <p class="sub">Every step in plain words, ticked off or marked where it went wrong, with a screenshot after each part. Failures come first.</p>
 <pre class="term"><span class="p">$</span> bad-ass-mcp run smoke/ --config bam.json
-<span style="color:#5455ed">[</span><span style="color:#42ebf5">██████████████████████████████</span><span style="color:#5455ed">]</span> <span style="color:#e6ce80">100%</span>
+<span style="color:#5455ed">[</span><span style="color:#21c842">███████████████</span><span style="color:#d4524d">███████████████</span><span style="color:#5455ed">]</span> <span style="color:#e6ce80">100% done</span> · <span class="ok">1 passed</span> · <span class="bad">1 failed</span>
 <span class="ok">PASS    </span> font-picker-escape  (27.0s)
 <span class="bad">FAIL    </span> b-deliberately-broken  (23.5s)
          element not found: done (name 'Done and dusted')
@@ -253,65 +149,59 @@ footer a { color: var(--muted); }
 report: bam-results/…/report.html</pre>
         <div class="report-card" style="margin-top:16px">
           <h3>Open a real report</h3>
-          <p>From a macOS run: one script passes, one was broken on purpose so you can see what a failure looks like. Click any screenshot for the lightbox.</p>
-          <a class="btn ghost" href="report/report.html">report.html →</a>
+          <p>From a real run on a Mac: one test passes, one was broken on purpose so you can see what a failure looks like. Click any screenshot to flip through them.</p>
+          <a class="btn ghost" href="report/report.html">Open the report →</a>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="platforms">
-    <h2><span class="n">04</span>One API, every desktop</h2>
-    <p class="sub">The same tools and the same scripts on all three operating systems, through each one's native accessibility API.</p>
-    <div class="grid4">
-      <div class="tile"><span class="api">AXUIElement</span><h3>macOS</h3><p>Native Cocoa apps, WKWebView (Tauri) and Electron.</p></div>
-      <div class="tile"><span class="api">UI Automation</span><h3>Windows</h3><p>Win32 and WebView2 apps, including large native game-modding editors.</p></div>
-      <div class="tile"><span class="api">AT-SPI2</span><h3>Linux</h3><p>GTK, Qt and WebKitGTK apps on X11. Tested on KDE Plasma and Xfce.</p></div>
-      <div class="tile"><span class="api">AT-SPI2 + XTEST</span><h3>Steam Deck</h3><p>Desktop Mode and Gaming Mode (gamescope). Yes, really.</p></div>
+  <section>
+    <h2><span class="n">05</span>Polite on your computer</h2>
+    <p class="sub">A test tool that drives your desktop has to behave. These aren't promises in a README; they're checks in the code.</p>
+    <div class="nicely">
+      <div class="tile"><h3>Works in the background when it can</h3><p>Most tests run behind your other windows. When one needs the real keyboard and mouse, BAM says so before it starts.</p></div>
+      <div class="tile"><h3>Steps aside when you're back</h3><p>If you start using the computer during a test that needs the keyboard and mouse, BAM stops and leaves your windows alone.</p></div>
+      <div class="tile"><h3>Only ever touches your app</h3><p>It checks it's typing into the app it launched before every key. If anything else is in front, it stops instead of guessing.</p></div>
+      <div class="tile"><h3>Replays stay on your machine</h3><p>Running a saved test needs no AI and no internet. The report is a folder on your disk.</p></div>
     </div>
   </section>
 
-  <section>
-    <h2><span class="n">05</span>Why the accessibility tree</h2>
-    <p class="sub">Every major OS already describes every button, field and menu in every app, for screen readers. bad-ass-mcp speaks that language directly.</p>
-    <div class="why">
-      <div class="tile" style="--c:var(--green)"><h3>Fast and cheap</h3><p>A tree read is structured text, not a screenshot round trip through a vision model.</p></div>
-      <div class="tile" style="--c:var(--lblue)"><h3>Works in the background</h3><p>Clicks and value changes fire on the control objects themselves, so the target window doesn't need focus for most actions.</p></div>
-      <div class="tile" style="--c:var(--yellow)"><h3>Names, not pixels</h3><p>Scripts target "Insert emoji", not (812, 44). A theme change or a resized window doesn't break them.</p></div>
-      <div class="tile" style="--c:var(--red)"><h3>Vision as a last resort</h3><p>Canvas, GL and games have no tree. <code>screenshot</code>, <code>click_at</code> and <code>drag</code> cover those, like the wiring above.</p></div>
+  <section id="platforms">
+    <h2><span class="n">06</span>One tool, every desktop</h2>
+    <p class="sub">The same tests run everywhere.</p>
+    <div class="grid4">
+      <div class="tile"><span class="api">AXUIElement</span><h3>Mac</h3><p>Regular Mac apps, plus apps built on web tech (Tauri, Electron).</p></div>
+      <div class="tile"><span class="api">UI Automation</span><h3>Windows</h3><p>Classic and modern Windows apps, including big game-modding editors.</p></div>
+      <div class="tile"><span class="api">AT-SPI2</span><h3>Linux</h3><p>GTK and Qt apps. Tested on KDE Plasma and Xfce.</p></div>
+      <div class="tile"><span class="api">AT-SPI2 + XTEST</span><h3>Steam Deck</h3><p>Desktop Mode and Gaming Mode. Yes, really.</p></div>
     </div>
   </section>
 
   <section id="install">
-    <h2><span class="n">06</span>Install</h2>
-    <p class="sub">Python 3.11+. Optional: <code>ffmpeg</code> and <code>gifsicle</code> for screen recording.</p>
+    <h2><span class="n">07</span>Install</h2>
+    <p class="sub">You'll need Python 3.11 or newer. Pick your system:</p>
     <div class="tabs" role="tablist">
-      <button role="tab" aria-selected="true" aria-controls="t-mac" id="b-mac">macOS</button>
+      <button role="tab" aria-selected="true" aria-controls="t-mac" id="b-mac">Mac</button>
       <button role="tab" aria-selected="false" aria-controls="t-win" id="b-win">Windows</button>
       <button role="tab" aria-selected="false" aria-controls="t-lin" id="b-lin">Linux</button>
     </div>
 <pre class="tabpanel" role="tabpanel" id="t-mac" aria-labelledby="b-mac">pip install 'bad-ass-mcp[macos]'
-<span class="c"># then grant Accessibility to your terminal in System Settings → Privacy &amp; Security</span>
+<span class="c"># then allow your terminal under System Settings → Privacy &amp; Security → Accessibility</span>
 claude mcp add bad-ass-mcp --scope user -- bad-ass-mcp</pre>
 <pre class="tabpanel" role="tabpanel" id="t-win" aria-labelledby="b-win" hidden>pip install "bad-ass-mcp[windows]"
 claude mcp add bad-ass-mcp --scope user -- bad-ass-mcp</pre>
-<pre class="tabpanel" role="tabpanel" id="t-lin" aria-labelledby="b-lin" hidden><span class="c"># Debian/Ubuntu: PyGObject and AT-SPI come from the distro</span>
+<pre class="tabpanel" role="tabpanel" id="t-lin" aria-labelledby="b-lin" hidden><span class="c"># Debian/Ubuntu: the accessibility libraries come from your distro</span>
 sudo apt install python3-gi gir1.2-atspi-2.0 at-spi2-core xdotool x11-utils imagemagick
 python -m venv --system-site-packages venv &amp;&amp; . venv/bin/activate
 pip install bad-ass-mcp
 claude mcp add bad-ass-mcp --scope user -- bad-ass-mcp</pre>
-    <p class="sub" style="margin-top:16px">Works with any MCP client: Claude Code, Claude Desktop, Codex, Gemini CLI, or a local model through an OpenAI-compatible bridge. Full docs on <a href="https://github.com/HoldMyBeer-gg/bad-ass-mcp#readme">GitHub</a>, the script format in <a href="https://github.com/HoldMyBeer-gg/bad-ass-mcp/blob/main/docs/bam.md">docs/bam.md</a>.</p>
-  </section>
-
-  <section>
-    <h2><span class="n">07</span>It records itself, too</h2>
-    <p class="sub"><code>start_recording</code> / <code>stop_recording</code> capture a window to GIF or MP4. Here it is driving <a href="https://github.com/HoldMyBeer-gg/MarkTheCrab">MarkTheCrab</a>, a Markdown editor whose whole smoke suite runs on BAM.</p>
-    <div class="gifrow"><img src="media/markthecrab-demo.gif" alt="bad-ass-mcp typing into the MarkTheCrab Markdown editor and recording itself" loading="lazy"></div>
+    <p class="sub" style="margin-top:16px">Works with any AI app that speaks MCP: Claude Code, Claude Desktop, Codex, Gemini CLI, or a local model. Full docs are on <a href="https://github.com/HoldMyBeer-gg/bad-ass-mcp#readme">GitHub</a>; the test format is in <a href="https://github.com/HoldMyBeer-gg/bad-ass-mcp/blob/main/docs/bam.md">docs/bam.md</a>.</p>
   </section>
 
   <section class="star">
     <h2>If it saved you a click-through, star it.</h2>
-    <p>bad-ass-mcp is MIT and built by one person and a few crabs. Stars are how other people find it.</p>
+    <p>bad-ass-mcp is free, MIT-licensed, and built by one person and a few crabs. Stars are how other people find it.</p>
     <a class="btn primary" href="https://github.com/HoldMyBeer-gg/bad-ass-mcp">★ Star bad-ass-mcp</a>
   </section>
 </div>
@@ -319,7 +209,7 @@ claude mcp add bad-ass-mcp --scope user -- bad-ass-mcp</pre>
 <footer>
   <div class="wrap">
     <span>bad-ass-mcp · MIT · © jabberwock · <a href="https://github.com/HoldMyBeer-gg">HoldMyBeer-gg</a></span>
-    <span>Among Us is a trademark of Innersloth. Not affiliated.</span>
+    <span><a href="gallery/">Gallery</a></span>
   </div>
 </footer>
 

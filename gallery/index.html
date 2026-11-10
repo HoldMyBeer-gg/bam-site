@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BAM gallery | bad-ass-mcp</title>
+<meta name="description" content="Clips of bad-ass-mcp and BAM driving real desktop apps on Mac, Windows, Linux and the Steam Deck, each labelled with how it found what to click.">
+<link rel="canonical" href="https://bam.holdmybeer.gg/gallery/">
+<meta property="og:title" content="BAM gallery">
+<meta property="og:description" content="bad-ass-mcp driving real desktop apps, labelled honestly: screen-reader engine first, eyes only when an app gives it nothing to read.">
+<meta property="og:image" content="https://bam.holdmybeer.gg/media/among-us-wiring.jpg">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><rect width='16' height='16' fill='%23000'/><rect x='2' y='2' width='4' height='12' fill='%2321C842'/><rect x='6' y='2' width='4' height='12' fill='%235455ED'/><rect x='10' y='2' width='4' height='12' fill='%23FC5554'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=JetBrains+Mono:wght@400;600&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div class="bar" aria-hidden="true">
+  <span style="background:#21c842"></span><span style="background:#5edc78"></span><span style="background:#5455ed"></span><span style="background:#7d76fc"></span><span style="background:#d4524d"></span><span style="background:#42ebf5"></span><span style="background:#fc5554"></span><span style="background:#ff7978"></span><span style="background:#d4c154"></span><span style="background:#e6ce80"></span><span style="background:#21b03b"></span><span style="background:#c95bba"></span><span style="background:#cccccc"></span>
+</div>
+<div class="wrap">
+  <nav>
+    <a class="logo" href="../">B<b>A</b>M</a>
+    <div class="links">
+      <a href="../#how">How it works</a>
+      <a href="./" aria-current="page">Gallery</a>
+      <a href="../#install">Install</a>
+      <a href="https://github.com/HoldMyBeer-gg/bad-ass-mcp">GitHub</a>
+    </div>
+  </nav>
+
+  <section style="padding-top:32px">
+    <h2>Gallery</h2>
+    <p class="sub">Real runs on real machines. Each clip says how bad-ass-mcp knew what to click, because that's the whole point.</p>
+    <div class="legend">
+      <span class="badge tree">● Screen-reader engine</span> found buttons and fields by name, no screenshots
+      <span class="badge vision">● Eyes</span> the app describes nothing (games, 3D), so it looked at the screen
+    </div>
+
+    <div class="gallery">
+      <article class="clip">
+        <div class="media"><img src="../media/markthecrab-demo.gif" alt="bad-ass-mcp typing into the MarkTheCrab Markdown editor" loading="lazy"></div>
+        <div class="body">
+          <span class="badge tree">● Screen-reader engine</span>
+          <h3>Typing into a Markdown editor</h3>
+          <p>A short script types Maxwell's equations into <a href="https://github.com/HoldMyBeer-gg/MarkTheCrab">MarkTheCrab</a> through the editor it found by name, and bad-ass-mcp records the window while it works.</p>
+          <div class="meta"><span>Linux (Kali)</span><span>scripted run</span></div>
+        </div>
+      </article>
+
+      <article class="clip">
+        <div class="media"><video src="../media/among-us-wiring.mp4" poster="../media/among-us-wiring.jpg" muted loop playsinline controls preload="none" aria-label="Claude solving the Among Us Fix Wiring task"></video></div>
+        <div class="body">
+          <span class="badge vision">● Eyes</span>
+          <h3>Fixing the wiring in Among Us</h3>
+          <p>Games don't describe their buttons, so there's nothing to read. Claude looked at a screenshot, matched the wire colours, and dragged each one across with bad-ass-mcp's <code>drag</code>. The fallback, not the default.</p>
+          <div class="meta"><span>Steam Deck, Gaming Mode</span><span>deck-crab</span><span>Claude, live</span></div>
+        </div>
+      </article>
+
+      <article class="clip">
+        <div class="media empty">COMING SOON</div>
+        <div class="body">
+          <span class="badge tree">● Screen-reader engine</span>
+          <h3>A full test suite, replayed</h3>
+          <p>BAM replaying MarkTheCrab's six smoke tests with no AI in the loop, pointer visible and paced so you can follow it, ending on the report.</p>
+          <div class="meta"><span>Windows · macOS · Linux</span><span>BAM replay</span></div>
+        </div>
+      </article>
+
+      <article class="clip">
+        <div class="media empty">COMING SOON</div>
+        <div class="body">
+          <span class="badge tree">● Screen-reader engine</span>
+          <h3>A big native editor</h3>
+          <p>Editing game data in a large Windows modding tool: dialogs, lists and context menus, all by name.</p>
+          <div class="meta"><span>Windows</span><span>Claude, live</span></div>
+        </div>
+      </article>
+    </div>
+  </section>
+</div>
+<footer>
+  <div class="wrap">
+    <span>bad-ass-mcp · MIT · © jabberwock · <a href="https://github.com/HoldMyBeer-gg">HoldMyBeer-gg</a></span>
+    <span>Among Us is a trademark of Innersloth. Not affiliated.</span>
+  </div>
+</footer>
+</body>
+</html>
