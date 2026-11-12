@@ -9,8 +9,12 @@
       "type": "string"
     },
     "window": {
-      "type": "string",
-      "description": "Title substring of the app's main window."
+      "allOf": [
+        {
+          "$ref": "#/$defs/per_platform_string"
+        }
+      ],
+      "description": "Substring of the app's main window: matched against the listed name (process name on macOS, title on Windows, AT-SPI app name on Linux) and every top-level window title, case-insensitive. May be per-platform."
     },
     "app": {
       "anyOf": [
@@ -101,6 +105,91 @@
         }
       ],
       "description": "Launch command, string or argv list."
+    },
+    "allow_temp_saving_mfa_codes": {
+      "type": "boolean",
+      "description": "Allow a setup shell entry to save its output (a pairing or MFA code) with \"save\" for later steps. The value is kept in memory for the run only and shown as ••• in every output. Only honoured from the runner's own config file or command line."
+    },
+    "allow_secrets_in_plain_fields": {
+      "type": "boolean",
+      "description": "Allow a type step's secret into a field that isn't a password field. Its value would be visible, so once one is typed the run keeps no further screenshots and no video. Only honoured from the runner's own config file or command line."
+    },
+    "allow_password_fields": {
+      "description": "Allow type steps into password fields: true for any app, or a list of window names (case-insensitive substring). Only honoured from the runner's own config file or command line, never from a script's configuration block.",
+      "anyOf": [
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      ]
+    },
+    "helpers": {
+      "anyOf": [
+        {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1
+        },
+        {
+          "type": "object",
+          "description": "Per-platform value: macos / windows / linux (null = not on that platform).",
+          "properties": {
+            "macos": {
+              "anyOf": [
+                {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "minItems": 1
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "windows": {
+              "anyOf": [
+                {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "minItems": 1
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "linux": {
+              "anyOf": [
+                {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "minItems": 1
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          },
+          "additionalProperties": false,
+          "minProperties": 1
+        }
+      ],
+      "description": "Other processes whose windows the run may drive, matched like `window`. For dialogs owned by a process that runs before the launch, e.g. \"xdg-desktop-portal\" for file pickers on Linux."
     },
     "pid": {
       "type": "integer",
@@ -279,6 +368,13 @@
       "type": "boolean"
     },
     "demo_pace": {
+      "type": "number",
+      "minimum": 0
+    },
+    "annotate": {
+      "type": "boolean"
+    },
+    "annotate_lead": {
       "type": "number",
       "minimum": 0
     },
