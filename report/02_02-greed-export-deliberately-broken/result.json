@@ -16,7 +16,7 @@
       "name": "Place the window and find Greed",
       "steps": [
         {
-          "text": "Run `powershell.exe -NoProfile -ExecutionPolicy Bypass -File 'D:/goblin_flow/bam/move_window.ps1' 'Rusty Demon' 233 10 1600 1370`"
+          "text": "Run `powershell.exe -NoProfile -ExecutionPolicy Bypass -File 'goblin/move_window.ps1' 'Rusty Demon' 233 10 1600 1370`"
         },
         {
           "text": "Pause 0.5 s",

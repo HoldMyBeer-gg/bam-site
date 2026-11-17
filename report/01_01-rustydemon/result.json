@@ -10,7 +10,7 @@
       "name": "Place the window and find the goblin model",
       "steps": [
         {
-          "text": "Run `powershell.exe -NoProfile -ExecutionPolicy Bypass -File 'D:/goblin_flow/bam/move_window.ps1' 'Rusty Demon' 233 140 1600 1000`"
+          "text": "Run `powershell.exe -NoProfile -ExecutionPolicy Bypass -File 'goblin/move_window.ps1' 'Rusty Demon' 233 140 1600 1000`"
         },
         {
           "text": "Pause 0.5 s",
@@ -132,7 +132,7 @@
       "name": "Save treasureGoblin_Run_01.glb",
       "steps": [
         {
-          "text": "Type \"D:\\goblin_flow\\treasureGoblin_Run_01.glb\" into “File name:”"
+          "text": "Type \"goblin\\treasureGoblin_Run_01.glb\" into “File name:”"
         },
         {
           "text": "Press Return"
@@ -217,7 +217,7 @@
       "name": "Save treasureGoblin_idle_01.glb",
       "steps": [
         {
-          "text": "Type \"D:\\goblin_flow\\treasureGoblin_idle_01.glb\" into “File name:”"
+          "text": "Type \"goblin\\treasureGoblin_idle_01.glb\" into “File name:”"
         },
         {
           "text": "Press Return"
@@ -302,7 +302,7 @@
       "name": "Save treasureGoblin_idle_03.glb",
       "steps": [
         {
-          "text": "Type \"D:\\goblin_flow\\treasureGoblin_idle_03.glb\" into “File name:”"
+          "text": "Type \"goblin\\treasureGoblin_idle_03.glb\" into “File name:”"
         },
         {
           "text": "Press Return"
@@ -387,7 +387,7 @@
       "name": "Save treasureGoblin_GetHit.glb",
       "steps": [
         {
-          "text": "Type \"D:\\goblin_flow\\treasureGoblin_GetHit.glb\" into “File name:”"
+          "text": "Type \"goblin\\treasureGoblin_GetHit.glb\" into “File name:”"
         },
         {
           "text": "Press Return"
@@ -472,7 +472,7 @@
       "name": "Save treasureGoblin_KnockBack.glb",
       "steps": [
         {
-          "text": "Type \"D:\\goblin_flow\\treasureGoblin_KnockBack.glb\" into “File name:”"
+          "text": "Type \"goblin\\treasureGoblin_KnockBack.glb\" into “File name:”"
         },
         {
           "text": "Press Return"
@@ -557,7 +557,7 @@
       "name": "Save treasureGoblin_Knockback_land.glb",
       "steps": [
         {
-          "text": "Type \"D:\\goblin_flow\\treasureGoblin_Knockback_land.glb\" into “File name:”"
+          "text": "Type \"goblin\\treasureGoblin_Knockback_land.glb\" into “File name:”"
         },
         {
           "text": "Press Return"
@@ -642,7 +642,7 @@
       "name": "Save treasureGoblin_Stunned.glb",
       "steps": [
         {
-          "text": "Type \"D:\\goblin_flow\\treasureGoblin_Stunned.glb\" into “File name:”"
+          "text": "Type \"goblin\\treasureGoblin_Stunned.glb\" into “File name:”"
         },
         {
           "text": "Press Return"
@@ -658,7 +658,7 @@
     }
   ],
   "checks": [
-    "`n=$(ls /d/goblin_flow/treasureGoblin_*.glb 2>/dev/null | wc -l); [ \"$n\" -eq 7 ]` succeeds"
+    "`n=$(ls goblin/treasureGoblin_*.glb 2>/dev/null | wc -l); [ \"$n\" -eq 7 ]` succeeds"
   ],
   "window": "8393308",
   "screenshots": [
