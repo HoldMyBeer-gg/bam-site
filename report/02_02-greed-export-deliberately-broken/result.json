@@ -1,0 +1,99 @@
+{
+  "name": "02-greed-export-deliberately-broken",
+  "script": "goblin/02-greed-export-deliberately-broken.json",
+  "platform": "windows",
+  "started_at": "2026-11-16T17:05:13-08:00",
+  "covers": "Deliberately broken for the demo report: previews Greed and opens the Export menu, then waits for an FBX export RustyDemon doesn't have.",
+  "status": "FAIL",
+  "failure": {
+    "phase": 4,
+    "step": 1,
+    "action": "wait_for_element",
+    "reason": "wait_for_element failed: timed out after 5s waiting for name='Export As FBX'"
+  },
+  "phases": [
+    {
+      "name": "Place the window and find Greed",
+      "steps": [
+        {
+          "text": "Run `powershell.exe -NoProfile -ExecutionPolicy Bypass -File 'D:/goblin_flow/bam/move_window.ps1' 'Rusty Demon' 233 10 1600 1370`"
+        },
+        {
+          "text": "Pause 0.5 s",
+          "pause": true
+        },
+        {
+          "text": "Type \"p1_Greed.app\" into “Search files”"
+        },
+        {
+          "text": "Click “Search”"
+        },
+        {
+          "text": "“p1_Greed.app” appears",
+          "expect": true
+        }
+      ],
+      "checks": [],
+      "status": "PASS",
+      "screenshot": "phase-1.png",
+      "seconds": 5.859
+    },
+    {
+      "name": "Preview Greed",
+      "steps": [
+        {
+          "text": "Click “p1_Greed.app”"
+        },
+        {
+          "text": "“Export” appears",
+          "expect": true
+        },
+        {
+          "text": "Pause 1 s",
+          "pause": true
+        }
+      ],
+      "checks": [],
+      "status": "PASS",
+      "screenshot": "phase-2.png",
+      "seconds": 3.594
+    },
+    {
+      "name": "Open the Export menu",
+      "steps": [
+        {
+          "text": "Click “Export”"
+        },
+        {
+          "text": "“Export As glTF (rigged)” appears",
+          "expect": true
+        }
+      ],
+      "checks": [],
+      "status": "PASS",
+      "screenshot": "phase-3.png",
+      "seconds": 1.812
+    },
+    {
+      "name": "Export Greed as FBX (this item does not exist)",
+      "steps": [
+        {
+          "text": "“Export As FBX” appears",
+          "expect": true
+        }
+      ],
+      "checks": [],
+      "status": "FAIL",
+      "seconds": 5.531
+    }
+  ],
+  "window": "4784834",
+  "screenshots": [
+    "phase-1.png",
+    "phase-2.png",
+    "phase-3.png"
+  ],
+  "fail_screenshot": "fail.png",
+  "finished_at": "2026-11-16T17:05:33-08:00",
+  "seconds": 19.98
+}

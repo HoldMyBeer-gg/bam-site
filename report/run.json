@@ -1,36 +1,36 @@
 {
-  "commit": "79a8a8d",
-  "platform": "macos",
+  "commit": "f129f86",
+  "platform": "windows",
   "config": {
-    "window": "MarkTheCrab",
-    "screenshot_proof": true
+    "fail_fast": true
   },
+  "started_at": "2026-11-16T17:05:13-08:00",
   "scripts": [
     {
-      "name": "font-picker-escape",
-      "script": "smoke/a-font-picker-escape.json",
-      "folder": "01_font-picker-escape",
+      "name": "01-rustydemon",
+      "script": "goblin/01-rustydemon.json",
+      "folder": "01_01-rustydemon",
       "status": "PASS",
       "attempts": 1,
-      "seconds": 27.03
+      "seconds": 103.64
     },
     {
-      "name": "b-deliberately-broken",
-      "script": "smoke/b-broken.json",
-      "folder": "02_b-deliberately-broken",
+      "name": "02-greed-export-deliberately-broken",
+      "script": "goblin/02-greed-export-deliberately-broken.json",
+      "folder": "02_02-greed-export-deliberately-broken",
       "status": "FAIL",
       "attempts": 1,
+      "seconds": 19.98,
       "failure": {
-        "phase": 5,
-        "reason": "element not found: done (name 'Done and dusted')",
-        "action": "learn"
-      },
-      "seconds": 23.47
+        "phase": 4,
+        "step": 1,
+        "action": "wait_for_element",
+        "reason": "wait_for_element failed: timed out after 5s waiting for name='Export As FBX'"
+      }
     }
   ],
-  "started_at": "2026-11-09T14:01:47-08:00",
-  "finished_at": "2026-11-09T14:02:37-08:00",
-  "seconds": 50.0,
+  "finished_at": "2026-11-16T17:05:33-08:00",
+  "seconds": 20.0,
   "totals": {
     "PASS": 1,
     "FAIL": 1
