@@ -1,0 +1,1209 @@
+[
+ {
+  "t": 2.984,
+  "event": "phase",
+  "name": "Place the window and find the goblin model",
+  "number": 1
+ },
+ {
+  "t": 3.359,
+  "event": "step",
+  "phase": "Place the window and find the goblin model",
+  "action": "shell",
+  "target": null,
+  "bounds": null
+ },
+ {
+  "t": 4.812,
+  "event": "step",
+  "phase": "Place the window and find the goblin model",
+  "action": "sleep",
+  "target": null,
+  "bounds": null
+ },
+ {
+  "t": 6.109,
+  "event": "step",
+  "phase": "Place the window and find the goblin model",
+  "action": "type",
+  "target": "search",
+  "bounds": [
+   249.0,
+   210.0,
+   300.0,
+   25.0
+  ]
+ },
+ {
+  "t": 7.062,
+  "event": "step",
+  "phase": "Place the window and find the goblin model",
+  "action": "click",
+  "target": "go",
+  "bounds": [
+   555.0,
+   210.0,
+   62.0,
+   25.0
+  ]
+ },
+ {
+  "t": 7.953,
+  "event": "step",
+  "phase": "Place the window and find the goblin model",
+  "action": "wait_for_element",
+  "target": null,
+  "bounds": null
+ },
+ {
+  "t": 8.828,
+  "event": "phase",
+  "name": "Preview the goblin, widen the panel and orbit",
+  "number": 2
+ },
+ {
+  "t": 8.828,
+  "event": "step",
+  "phase": "Preview the goblin, widen the panel and orbit",
+  "action": "click",
+  "target": "app",
+  "bounds": [
+   477.0,
+   324.0,
+   1092.0,
+   40.0
+  ]
+ },
+ {
+  "t": 9.719,
+  "event": "step",
+  "phase": "Preview the goblin, widen the panel and orbit",
+  "action": "wait_for_element",
+  "target": null,
+  "bounds": null
+ },
+ {
+  "t": 10.531,
+  "event": "step",
+  "phase": "Preview the goblin, widen the panel and orbit",
+  "action": "drag",
+  "target": null,
+  "bounds": null
+ },
+ {
+  "t": 12.859,
+  "event": "step",
+  "phase": "Preview the goblin, widen the panel and orbit",
+  "action": "sleep",
+  "target": null,
+  "bounds": null
+ },
+ {
+  "t": 14.156,
+  "event": "step",
+  "phase": "Preview the goblin, widen the panel and orbit",
+  "action": "drag",
+  "target": null,
+  "bounds": null
+ },
+ {
+  "t": 17.797,
+  "event": "step",
+  "phase": "Preview the goblin, widen the panel and orbit",
+  "action": "drag",
+  "target": null,
+  "bounds": null
+ },
+ {
+  "t": 21.547,
+  "event": "phase",
+  "name": "Find treasureGoblin_Run_01",
+  "number": 3
+ },
+ {
+  "t": 21.547,
+  "event": "step",
+  "phase": "Find treasureGoblin_Run_01",
+  "action": "type",
+  "target": "search",
+  "bounds": [
+   249.0,
+   210.0,
+   300.0,
+   25.0
+  ]
+ },
+ {
+  "t": 22.5,
+  "event": "step",
+  "phase": "Find treasureGoblin_Run_01",
+  "action": "click",
+  "target": "go",
+  "bounds": [
+   555.0,
+   210.0,
+   62.0,
+   25.0
+  ]
+ },
+ {
+  "t": 23.391,
+  "event": "step",
+  "phase": "Find treasureGoblin_Run_01",
+  "action": "wait_for_element",
+  "target": null,
+  "bounds": null
+ },
+ {
+  "t": 24.266,
+  "event": "phase",
+  "name": "Select treasureGoblin_Run_01",
+  "number": 4
+ },
+ {
+  "t": 24.281,
+  "event": "step",
+  "phase": "Select treasureGoblin_Run_01",
+  "action": "click",
+  "target": "clip",
+  "bounds": [
+   477.0,
+   324.0,
+   1092.0,
+   40.0
+  ]
+ },
+ {
+  "t": 25.172,
+  "event": "step",
+  "phase": "Select treasureGoblin_Run_01",
+  "action": "wait_for_element",
+  "target": null,
+  "bounds": null
+ },
+ {
+  "t": 26.047,
+  "event": "phase",
+  "name": "Open the Export menu for treasureGoblin_Run_01",
+  "number": 5
+ },
+ {
+  "t": 26.047,
+  "event": "step",
+  "phase": "Open the Export menu for treasureGoblin_Run_01",
+  "action": "click",
+  "target": "menu",
+  "bounds": [
+   1586.0,
+   714.0,
+   59.0,
+   25.0
+  ]
+ },
+ {
+  "t": 26.937,
+  "event": "step",
+  "phase": "Open the Export menu for treasureGoblin_Run_01",
+  "action": "wait_for_element",
+  "target": null,
+  "bounds": null
+ },
+ {
+  "t": 27.812,
+  "event": "phase",
+  "name": "Export treasureGoblin_Run_01 as glTF",
+  "number": 6
+ },
+ {
+  "t": 27.828,
+  "event": "step",
+  "phase": "Export treasureGoblin_Run_01 as glTF",
+  "action": "click",
+  "target": "export",
+  "bounds": [
+   1593.0,
+   745.0,
+   160.0,
+   20.0
+  ]
+ },
+ {
+  "t": 28.719,
+  "event": "step",
+  "phase": "Export treasureGoblin_Run_01 as glTF",
+  "action": "wait_for_window",
+  "target": null,
+  "bounds": null
+ },
+ {
+  "t": 29.578,
+  "event": "phase",
+  "name": "Save treasureGoblin_Run_01.glb",
+  "number": 7
+ },
+ {
+  "t": 29.641,
+  "event": "step",
+  "phase": "Save treasureGoblin_Run_01.glb",
+  "action": "type",
+  "target": "file",
+  "bounds": [
+   136.0,
+   95.0,
+   1065.0,
+   17.0
+  ]
+ },
+ {
+  "t": 30.609,
+  "event": "step",
+  "phase": "Save treasureGoblin_Run_01.glb",
+  "action": "key",
+  "target": null,
+  "bounds": null
+ },
+ {
+  "t": 31.406,
+  "event": "step",
+  "phase": "Save treasureGoblin_Run_01.glb",
+  "action": "sleep",
+  "target": null,
+  "bounds": null
+ },
+ {
+  "t": 33.203,
+  "event": "phase",
+  "name": "Find treasureGoblin_idle_01",
+  "number": 8
+ },
+ {
+  "t": 33.219,
+  "event": "step",
+  "phase": "Find treasureGoblin_idle_01",
+  "action": "type",
+  "target": "search",
+  "bounds": [
+   249.0,
+   210.0,
+   300.0,
+   25.0
+  ]
+ },
+ {
+  "t": 34.172,
+  "event": "step",
+  "phase": "Find treasureGoblin_idle_01",
+  "action": "click",
+  "target": "go",
+  "bounds": [
+   555.0,
+   210.0,
+   62.0,
+   25.0
+  ]
+ },
+ {
+  "t": 35.062,
+  "event": "step",
+  "phase": "Find treasureGoblin_idle_01",
+  "action": "wait_for_element",
+  "target": null,
+  "bounds": null
+ },
+ {
+  "t": 35.953,
+  "event": "phase",
+  "name": "Select treasureGoblin_idle_01",
+  "number": 9
+ },
+ {
+  "t": 35.969,
+  "event": "step",
+  "phase": "Select treasureGoblin_idle_01",
+  "action": "click",
+  "target": "clip",
+  "bounds": [
+   477.0,
+   324.0,
+   1092.0,
+   40.0
+  ]
+ },
+ {
+  "t": 36.859,
+  "event": "step",
+  "phase": "Select treasureGoblin_idle_01",
+  "action": "wait_for_element",
+  "target": null,
+  "bounds": null
+ },
+ {
+  "t": 37.734,
+  "event": "phase",
+  "name": "Open the Export menu for treasureGoblin_idle_01",
+  "number": 10
+ },
+ {
+  "t": 37.75,
+  "event": "step",
+  "phase": "Open the Export menu for treasureGoblin_idle_01",
+  "action": "click",
+  "target": "menu",
+  "bounds": [
+   1586.0,
+   700.0,
+   59.0,
+   25.0
+  ]
+ },
+ {
+  "t": 38.625,
+  "event": "step",
+  "phase": "Open the Export menu for treasureGoblin_idle_01",
+  "action": "wait_for_element",
+  "target": null,
+  "bounds": null
+ },
+ {
+  "t": 39.5,
+  "event": "phase",
+  "name": "Export treasureGoblin_idle_01 as glTF",
+  "number": 11
+ },
+ {
+  "t": 39.531,
+  "event": "step",
+  "phase": "Export treasureGoblin_idle_01 as glTF",
+  "action": "click",
+  "target": "export",
+  "bounds": [
+   1593.0,
+   731.0,
+   160.0,
+   20.0
+  ]
+ },
+ {
+  "t": 40.422,
+  "event": "step",
+  "phase": "Export treasureGoblin_idle_01 as glTF",
+  "action": "wait_for_window",
+  "target": null,
+  "bounds": null
+ },
+ {
+  "t": 41.297,
+  "event": "phase",
+  "name": "Save treasureGoblin_idle_01.glb",
+  "number": 12
+ },
+ {
+  "t": 41.359,
+  "event": "step",
+  "phase": "Save treasureGoblin_idle_01.glb",
+  "action": "type",
+  "target": "file",
+  "bounds": [
+   136.0,
+   95.0,
+   1065.0,
+   17.0
+  ]
+ },
+ {
+  "t": 42.312,
+  "event": "step",
+  "phase": "Save treasureGoblin_idle_01.glb",
+  "action": "key",
+  "target": null,
+  "bounds": null
+ },
+ {
+  "t": 43.125,
+  "event": "step",
+  "phase": "Save treasureGoblin_idle_01.glb",
+  "action": "sleep",
+  "target": null,
+  "bounds": null
+ },
+ {
+  "t": 44.922,
+  "event": "phase",
+  "name": "Find treasureGoblin_idle_03",
+  "number": 13
+ },
+ {
+  "t": 44.937,
+  "event": "step",
+  "phase": "Find treasureGoblin_idle_03",
+  "action": "type",
+  "target": "search",
+  "bounds": [
+   249.0,
+   210.0,
+   300.0,
+   25.0
+  ]
+ },
+ {
+  "t": 45.891,
+  "event": "step",
+  "phase": "Find treasureGoblin_idle_03",
+  "action": "click",
+  "target": "go",
+  "bounds": [
+   555.0,
+   210.0,
+   62.0,
+   25.0
+  ]
+ },
+ {
+  "t": 46.781,
+  "event": "step",
+  "phase": "Find treasureGoblin_idle_03",
+  "action": "wait_for_element",
+  "target": null,
+  "bounds": null
+ },
+ {
+  "t": 47.672,
+  "event": "phase",
+  "name": "Select treasureGoblin_idle_03",
+  "number": 14
+ },
+ {
+  "t": 47.687,
+  "event": "step",
+  "phase": "Select treasureGoblin_idle_03",
+  "action": "click",
+  "target": "clip",
+  "bounds": [
+   477.0,
+   324.0,
+   1092.0,
+   40.0
+  ]
+ },
+ {
+  "t": 48.578,
+  "event": "step",
+  "phase": "Select treasureGoblin_idle_03",
+  "action": "wait_for_element",
+  "target": null,
+  "bounds": null
+ },
+ {
+  "t": 49.453,
+  "event": "phase",
+  "name": "Open the Export menu for treasureGoblin_idle_03",
+  "number": 15
+ },
+ {
+  "t": 49.469,
+  "event": "step",
+  "phase": "Open the Export menu for treasureGoblin_idle_03",
+  "action": "click",
+  "target": "menu",
+  "bounds": [
+   1586.0,
+   714.0,
+   59.0,
+   25.0
+  ]
+ },
+ {
+  "t": 50.359,
+  "event": "step",
+  "phase": "Open the Export menu for treasureGoblin_idle_03",
+  "action": "wait_for_element",
+  "target": null,
+  "bounds": null
+ },
+ {
+  "t": 51.234,
+  "event": "phase",
+  "name": "Export treasureGoblin_idle_03 as glTF",
+  "number": 16
+ },
+ {
+  "t": 51.25,
+  "event": "step",
+  "phase": "Export treasureGoblin_idle_03 as glTF",
+  "action": "click",
+  "target": "export",
+  "bounds": [
+   1593.0,
+   745.0,
+   160.0,
+   20.0
+  ]
+ },
+ {
+  "t": 52.125,
+  "event": "step",
+  "phase": "Export treasureGoblin_idle_03 as glTF",
+  "action": "wait_for_window",
+  "target": null,
+  "bounds": null
+ },
+ {
+  "t": 52.984,
+  "event": "phase",
+  "name": "Save treasureGoblin_idle_03.glb",
+  "number": 17
+ },
+ {
+  "t": 53.047,
+  "event": "step",
+  "phase": "Save treasureGoblin_idle_03.glb",
+  "action": "type",
+  "target": "file",
+  "bounds": [
+   136.0,
+   95.0,
+   1065.0,
+   17.0
+  ]
+ },
+ {
+  "t": 54.016,
+  "event": "step",
+  "phase": "Save treasureGoblin_idle_03.glb",
+  "action": "key",
+  "target": null,
+  "bounds": null
+ },
+ {
+  "t": 54.812,
+  "event": "step",
+  "phase": "Save treasureGoblin_idle_03.glb",
+  "action": "sleep",
+  "target": null,
+  "bounds": null
+ },
+ {
+  "t": 56.609,
+  "event": "phase",
+  "name": "Find treasureGoblin_GetHit",
+  "number": 18
+ },
+ {
+  "t": 56.625,
+  "event": "step",
+  "phase": "Find treasureGoblin_GetHit",
+  "action": "type",
+  "target": "search",
+  "bounds": [
+   249.0,
+   210.0,
+   300.0,
+   25.0
+  ]
+ },
+ {
+  "t": 57.578,
+  "event": "step",
+  "phase": "Find treasureGoblin_GetHit",
+  "action": "click",
+  "target": "go",
+  "bounds": [
+   555.0,
+   210.0,
+   62.0,
+   25.0
+  ]
+ },
+ {
+  "t": 58.469,
+  "event": "step",
+  "phase": "Find treasureGoblin_GetHit",
+  "action": "wait_for_element",
+  "target": null,
+  "bounds": null
+ },
+ {
+  "t": 59.344,
+  "event": "phase",
+  "name": "Select treasureGoblin_GetHit",
+  "number": 19
+ },
+ {
+  "t": 59.375,
+  "event": "step",
+  "phase": "Select treasureGoblin_GetHit",
+  "action": "click",
+  "target": "clip",
+  "bounds": [
+   477.0,
+   324.0,
+   1092.0,
+   40.0
+  ]
+ },
+ {
+  "t": 60.25,
+  "event": "step",
+  "phase": "Select treasureGoblin_GetHit",
+  "action": "wait_for_element",
+  "target": null,
+  "bounds": null
+ },
+ {
+  "t": 61.125,
+  "event": "phase",
+  "name": "Open the Export menu for treasureGoblin_GetHit",
+  "number": 20
+ },
+ {
+  "t": 61.141,
+  "event": "step",
+  "phase": "Open the Export menu for treasureGoblin_GetHit",
+  "action": "click",
+  "target": "menu",
+  "bounds": [
+   1586.0,
+   714.0,
+   59.0,
+   25.0
+  ]
+ },
+ {
+  "t": 62.031,
+  "event": "step",
+  "phase": "Open the Export menu for treasureGoblin_GetHit",
+  "action": "wait_for_element",
+  "target": null,
+  "bounds": null
+ },
+ {
+  "t": 62.906,
+  "event": "phase",
+  "name": "Export treasureGoblin_GetHit as glTF",
+  "number": 21
+ },
+ {
+  "t": 62.937,
+  "event": "step",
+  "phase": "Export treasureGoblin_GetHit as glTF",
+  "action": "click",
+  "target": "export",
+  "bounds": [
+   1593.0,
+   745.0,
+   160.0,
+   20.0
+  ]
+ },
+ {
+  "t": 63.812,
+  "event": "step",
+  "phase": "Export treasureGoblin_GetHit as glTF",
+  "action": "wait_for_window",
+  "target": null,
+  "bounds": null
+ },
+ {
+  "t": 64.672,
+  "event": "phase",
+  "name": "Save treasureGoblin_GetHit.glb",
+  "number": 22
+ },
+ {
+  "t": 64.734,
+  "event": "step",
+  "phase": "Save treasureGoblin_GetHit.glb",
+  "action": "type",
+  "target": "file",
+  "bounds": [
+   136.0,
+   95.0,
+   1065.0,
+   17.0
+  ]
+ },
+ {
+  "t": 65.703,
+  "event": "step",
+  "phase": "Save treasureGoblin_GetHit.glb",
+  "action": "key",
+  "target": null,
+  "bounds": null
+ },
+ {
+  "t": 66.5,
+  "event": "step",
+  "phase": "Save treasureGoblin_GetHit.glb",
+  "action": "sleep",
+  "target": null,
+  "bounds": null
+ },
+ {
+  "t": 68.297,
+  "event": "phase",
+  "name": "Find treasureGoblin_KnockBack",
+  "number": 23
+ },
+ {
+  "t": 68.312,
+  "event": "step",
+  "phase": "Find treasureGoblin_KnockBack",
+  "action": "type",
+  "target": "search",
+  "bounds": [
+   249.0,
+   210.0,
+   300.0,
+   25.0
+  ]
+ },
+ {
+  "t": 69.266,
+  "event": "step",
+  "phase": "Find treasureGoblin_KnockBack",
+  "action": "click",
+  "target": "go",
+  "bounds": [
+   555.0,
+   210.0,
+   62.0,
+   25.0
+  ]
+ },
+ {
+  "t": 70.156,
+  "event": "step",
+  "phase": "Find treasureGoblin_KnockBack",
+  "action": "wait_for_element",
+  "target": null,
+  "bounds": null
+ },
+ {
+  "t": 71.031,
+  "event": "phase",
+  "name": "Select treasureGoblin_KnockBack",
+  "number": 24
+ },
+ {
+  "t": 71.047,
+  "event": "step",
+  "phase": "Select treasureGoblin_KnockBack",
+  "action": "click",
+  "target": "clip",
+  "bounds": [
+   477.0,
+   324.0,
+   1092.0,
+   40.0
+  ]
+ },
+ {
+  "t": 71.937,
+  "event": "step",
+  "phase": "Select treasureGoblin_KnockBack",
+  "action": "wait_for_element",
+  "target": null,
+  "bounds": null
+ },
+ {
+  "t": 72.828,
+  "event": "phase",
+  "name": "Open the Export menu for treasureGoblin_KnockBack",
+  "number": 25
+ },
+ {
+  "t": 72.844,
+  "event": "step",
+  "phase": "Open the Export menu for treasureGoblin_KnockBack",
+  "action": "click",
+  "target": "menu",
+  "bounds": [
+   1586.0,
+   714.0,
+   59.0,
+   25.0
+  ]
+ },
+ {
+  "t": 73.734,
+  "event": "step",
+  "phase": "Open the Export menu for treasureGoblin_KnockBack",
+  "action": "wait_for_element",
+  "target": null,
+  "bounds": null
+ },
+ {
+  "t": 74.594,
+  "event": "phase",
+  "name": "Export treasureGoblin_KnockBack as glTF",
+  "number": 26
+ },
+ {
+  "t": 74.625,
+  "event": "step",
+  "phase": "Export treasureGoblin_KnockBack as glTF",
+  "action": "click",
+  "target": "export",
+  "bounds": [
+   1593.0,
+   745.0,
+   160.0,
+   20.0
+  ]
+ },
+ {
+  "t": 75.5,
+  "event": "step",
+  "phase": "Export treasureGoblin_KnockBack as glTF",
+  "action": "wait_for_window",
+  "target": null,
+  "bounds": null
+ },
+ {
+  "t": 76.359,
+  "event": "phase",
+  "name": "Save treasureGoblin_KnockBack.glb",
+  "number": 27
+ },
+ {
+  "t": 76.422,
+  "event": "step",
+  "phase": "Save treasureGoblin_KnockBack.glb",
+  "action": "type",
+  "target": "file",
+  "bounds": [
+   136.0,
+   95.0,
+   1065.0,
+   17.0
+  ]
+ },
+ {
+  "t": 77.391,
+  "event": "step",
+  "phase": "Save treasureGoblin_KnockBack.glb",
+  "action": "key",
+  "target": null,
+  "bounds": null
+ },
+ {
+  "t": 78.187,
+  "event": "step",
+  "phase": "Save treasureGoblin_KnockBack.glb",
+  "action": "sleep",
+  "target": null,
+  "bounds": null
+ },
+ {
+  "t": 80.0,
+  "event": "phase",
+  "name": "Find treasureGoblin_Knockback_land",
+  "number": 28
+ },
+ {
+  "t": 80.0,
+  "event": "step",
+  "phase": "Find treasureGoblin_Knockback_land",
+  "action": "type",
+  "target": "search",
+  "bounds": [
+   249.0,
+   210.0,
+   300.0,
+   25.0
+  ]
+ },
+ {
+  "t": 80.953,
+  "event": "step",
+  "phase": "Find treasureGoblin_Knockback_land",
+  "action": "click",
+  "target": "go",
+  "bounds": [
+   555.0,
+   210.0,
+   62.0,
+   25.0
+  ]
+ },
+ {
+  "t": 81.844,
+  "event": "step",
+  "phase": "Find treasureGoblin_Knockback_land",
+  "action": "wait_for_element",
+  "target": null,
+  "bounds": null
+ },
+ {
+  "t": 82.719,
+  "event": "phase",
+  "name": "Select treasureGoblin_Knockback_land",
+  "number": 29
+ },
+ {
+  "t": 82.734,
+  "event": "step",
+  "phase": "Select treasureGoblin_Knockback_land",
+  "action": "click",
+  "target": "clip",
+  "bounds": [
+   477.0,
+   324.0,
+   1092.0,
+   40.0
+  ]
+ },
+ {
+  "t": 83.625,
+  "event": "step",
+  "phase": "Select treasureGoblin_Knockback_land",
+  "action": "wait_for_element",
+  "target": null,
+  "bounds": null
+ },
+ {
+  "t": 84.484,
+  "event": "phase",
+  "name": "Open the Export menu for treasureGoblin_Knockback_land",
+  "number": 30
+ },
+ {
+  "t": 84.5,
+  "event": "step",
+  "phase": "Open the Export menu for treasureGoblin_Knockback_land",
+  "action": "click",
+  "target": "menu",
+  "bounds": [
+   1586.0,
+   714.0,
+   59.0,
+   25.0
+  ]
+ },
+ {
+  "t": 85.391,
+  "event": "step",
+  "phase": "Open the Export menu for treasureGoblin_Knockback_land",
+  "action": "wait_for_element",
+  "target": null,
+  "bounds": null
+ },
+ {
+  "t": 86.281,
+  "event": "phase",
+  "name": "Export treasureGoblin_Knockback_land as glTF",
+  "number": 31
+ },
+ {
+  "t": 86.297,
+  "event": "step",
+  "phase": "Export treasureGoblin_Knockback_land as glTF",
+  "action": "click",
+  "target": "export",
+  "bounds": [
+   1593.0,
+   745.0,
+   160.0,
+   20.0
+  ]
+ },
+ {
+  "t": 87.187,
+  "event": "step",
+  "phase": "Export treasureGoblin_Knockback_land as glTF",
+  "action": "wait_for_window",
+  "target": null,
+  "bounds": null
+ },
+ {
+  "t": 88.047,
+  "event": "phase",
+  "name": "Save treasureGoblin_Knockback_land.glb",
+  "number": 32
+ },
+ {
+  "t": 88.109,
+  "event": "step",
+  "phase": "Save treasureGoblin_Knockback_land.glb",
+  "action": "type",
+  "target": "file",
+  "bounds": [
+   136.0,
+   95.0,
+   1065.0,
+   17.0
+  ]
+ },
+ {
+  "t": 89.062,
+  "event": "step",
+  "phase": "Save treasureGoblin_Knockback_land.glb",
+  "action": "key",
+  "target": null,
+  "bounds": null
+ },
+ {
+  "t": 89.875,
+  "event": "step",
+  "phase": "Save treasureGoblin_Knockback_land.glb",
+  "action": "sleep",
+  "target": null,
+  "bounds": null
+ },
+ {
+  "t": 91.672,
+  "event": "phase",
+  "name": "Find treasureGoblin_Stunned",
+  "number": 33
+ },
+ {
+  "t": 91.687,
+  "event": "step",
+  "phase": "Find treasureGoblin_Stunned",
+  "action": "type",
+  "target": "search",
+  "bounds": [
+   249.0,
+   210.0,
+   300.0,
+   25.0
+  ]
+ },
+ {
+  "t": 92.641,
+  "event": "step",
+  "phase": "Find treasureGoblin_Stunned",
+  "action": "click",
+  "target": "go",
+  "bounds": [
+   555.0,
+   210.0,
+   62.0,
+   25.0
+  ]
+ },
+ {
+  "t": 93.531,
+  "event": "step",
+  "phase": "Find treasureGoblin_Stunned",
+  "action": "wait_for_element",
+  "target": null,
+  "bounds": null
+ },
+ {
+  "t": 94.406,
+  "event": "phase",
+  "name": "Select treasureGoblin_Stunned",
+  "number": 34
+ },
+ {
+  "t": 94.422,
+  "event": "step",
+  "phase": "Select treasureGoblin_Stunned",
+  "action": "click",
+  "target": "clip",
+  "bounds": [
+   477.0,
+   324.0,
+   1092.0,
+   40.0
+  ]
+ },
+ {
+  "t": 95.312,
+  "event": "step",
+  "phase": "Select treasureGoblin_Stunned",
+  "action": "wait_for_element",
+  "target": null,
+  "bounds": null
+ },
+ {
+  "t": 96.172,
+  "event": "phase",
+  "name": "Open the Export menu for treasureGoblin_Stunned",
+  "number": 35
+ },
+ {
+  "t": 96.187,
+  "event": "step",
+  "phase": "Open the Export menu for treasureGoblin_Stunned",
+  "action": "click",
+  "target": "menu",
+  "bounds": [
+   1586.0,
+   714.0,
+   59.0,
+   25.0
+  ]
+ },
+ {
+  "t": 97.078,
+  "event": "step",
+  "phase": "Open the Export menu for treasureGoblin_Stunned",
+  "action": "wait_for_element",
+  "target": null,
+  "bounds": null
+ },
+ {
+  "t": 97.953,
+  "event": "phase",
+  "name": "Export treasureGoblin_Stunned as glTF",
+  "number": 36
+ },
+ {
+  "t": 97.969,
+  "event": "step",
+  "phase": "Export treasureGoblin_Stunned as glTF",
+  "action": "click",
+  "target": "export",
+  "bounds": [
+   1593.0,
+   745.0,
+   160.0,
+   20.0
+  ]
+ },
+ {
+  "t": 98.859,
+  "event": "step",
+  "phase": "Export treasureGoblin_Stunned as glTF",
+  "action": "wait_for_window",
+  "target": null,
+  "bounds": null
+ },
+ {
+  "t": 99.719,
+  "event": "phase",
+  "name": "Save treasureGoblin_Stunned.glb",
+  "number": 37
+ },
+ {
+  "t": 99.781,
+  "event": "step",
+  "phase": "Save treasureGoblin_Stunned.glb",
+  "action": "type",
+  "target": "file",
+  "bounds": [
+   136.0,
+   95.0,
+   1065.0,
+   17.0
+  ]
+ },
+ {
+  "t": 100.734,
+  "event": "step",
+  "phase": "Save treasureGoblin_Stunned.glb",
+  "action": "key",
+  "target": null,
+  "bounds": null
+ },
+ {
+  "t": 101.547,
+  "event": "step",
+  "phase": "Save treasureGoblin_Stunned.glb",
+  "action": "sleep",
+  "target": null,
+  "bounds": null
+ }
+]

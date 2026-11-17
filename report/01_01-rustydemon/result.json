@@ -1,0 +1,698 @@
+{
+  "name": "01-rustydemon",
+  "script": "goblin/01-rustydemon.json",
+  "platform": "windows",
+  "started_at": "2026-11-16T16:50:18-08:00",
+  "covers": "RustyDemon opens Diablo III, previews the treasure goblin, and exports the seven D3 clips as rigged glTF.",
+  "status": "PASS",
+  "phases": [
+    {
+      "name": "Place the window and find the goblin model",
+      "steps": [
+        {
+          "text": "Run `powershell.exe -NoProfile -ExecutionPolicy Bypass -File 'goblin/move_window.ps1' 'Rusty Demon' 233 140 1600 1000`"
+        },
+        {
+          "text": "Pause 0.5 s",
+          "pause": true
+        },
+        {
+          "text": "Type \"treasureGoblin_A.app\" into “Search files”"
+        },
+        {
+          "text": "Click “Search”"
+        },
+        {
+          "text": "“treasureGoblin_A.app” appears",
+          "expect": true
+        }
+      ],
+      "checks": [],
+      "status": "PASS",
+      "screenshot": "phase-1.png",
+      "seconds": 5.844
+    },
+    {
+      "name": "Preview the goblin, widen the panel and orbit",
+      "steps": [
+        {
+          "text": "Click “treasureGoblin_A.app”"
+        },
+        {
+          "text": "“Export” appears",
+          "expect": true
+        },
+        {
+          "text": "Drag the pointer by (0, 0)"
+        },
+        {
+          "text": "Pause 0.5 s",
+          "pause": true
+        },
+        {
+          "text": "Drag the pointer by (0, 0)"
+        },
+        {
+          "text": "Drag the pointer by (0, 0)"
+        }
+      ],
+      "checks": [],
+      "status": "PASS",
+      "screenshot": "phase-2.png",
+      "seconds": 12.719
+    },
+    {
+      "name": "Find treasureGoblin_Run_01",
+      "steps": [
+        {
+          "text": "Type \"treasureGoblin_Run_01.ani\" into “Search files”"
+        },
+        {
+          "text": "Click “Search”"
+        },
+        {
+          "text": "“treasureGoblin_Run_01.ani” appears",
+          "expect": true
+        }
+      ],
+      "checks": [],
+      "status": "PASS",
+      "screenshot": "phase-3.png",
+      "seconds": 2.719
+    },
+    {
+      "name": "Select treasureGoblin_Run_01",
+      "steps": [
+        {
+          "text": "Click “treasureGoblin_Run_01.ani”"
+        },
+        {
+          "text": "“Export” appears",
+          "expect": true
+        }
+      ],
+      "checks": [],
+      "status": "PASS",
+      "screenshot": "phase-4.png",
+      "seconds": 1.781
+    },
+    {
+      "name": "Open the Export menu for treasureGoblin_Run_01",
+      "steps": [
+        {
+          "text": "Click “Export”"
+        },
+        {
+          "text": "“Export Animation (glTF)” appears",
+          "expect": true
+        }
+      ],
+      "checks": [],
+      "status": "PASS",
+      "screenshot": "phase-5.png",
+      "seconds": 1.765
+    },
+    {
+      "name": "Export treasureGoblin_Run_01 as glTF",
+      "steps": [
+        {
+          "text": "Click “Export Animation (glTF)”"
+        },
+        {
+          "text": "A “Save As” window appears",
+          "expect": true
+        }
+      ],
+      "checks": [],
+      "status": "PASS",
+      "screenshot": "phase-6.png",
+      "seconds": 1.766
+    },
+    {
+      "name": "Save treasureGoblin_Run_01.glb",
+      "steps": [
+        {
+          "text": "Type \"goblin\\treasureGoblin_Run_01.glb\" into “File name:”"
+        },
+        {
+          "text": "Press Return"
+        },
+        {
+          "text": "Pause 1 s",
+          "pause": true
+        }
+      ],
+      "checks": [],
+      "status": "PASS",
+      "seconds": 3.625
+    },
+    {
+      "name": "Find treasureGoblin_idle_01",
+      "steps": [
+        {
+          "text": "Type \"treasureGoblin_idle_01.ani\" into “Search files”"
+        },
+        {
+          "text": "Click “Search”"
+        },
+        {
+          "text": "“treasureGoblin_idle_01.ani” appears",
+          "expect": true
+        }
+      ],
+      "checks": [],
+      "status": "PASS",
+      "screenshot": "phase-8.png",
+      "seconds": 2.75
+    },
+    {
+      "name": "Select treasureGoblin_idle_01",
+      "steps": [
+        {
+          "text": "Click “treasureGoblin_idle_01.ani”"
+        },
+        {
+          "text": "“Export” appears",
+          "expect": true
+        }
+      ],
+      "checks": [],
+      "status": "PASS",
+      "screenshot": "phase-9.png",
+      "seconds": 1.781
+    },
+    {
+      "name": "Open the Export menu for treasureGoblin_idle_01",
+      "steps": [
+        {
+          "text": "Click “Export”"
+        },
+        {
+          "text": "“Export Animation (glTF)” appears",
+          "expect": true
+        }
+      ],
+      "checks": [],
+      "status": "PASS",
+      "screenshot": "phase-10.png",
+      "seconds": 1.766
+    },
+    {
+      "name": "Export treasureGoblin_idle_01 as glTF",
+      "steps": [
+        {
+          "text": "Click “Export Animation (glTF)”"
+        },
+        {
+          "text": "A “Save As” window appears",
+          "expect": true
+        }
+      ],
+      "checks": [],
+      "status": "PASS",
+      "screenshot": "phase-11.png",
+      "seconds": 1.797
+    },
+    {
+      "name": "Save treasureGoblin_idle_01.glb",
+      "steps": [
+        {
+          "text": "Type \"goblin\\treasureGoblin_idle_01.glb\" into “File name:”"
+        },
+        {
+          "text": "Press Return"
+        },
+        {
+          "text": "Pause 1 s",
+          "pause": true
+        }
+      ],
+      "checks": [],
+      "status": "PASS",
+      "seconds": 3.625
+    },
+    {
+      "name": "Find treasureGoblin_idle_03",
+      "steps": [
+        {
+          "text": "Type \"treasureGoblin_idle_03.ani\" into “Search files”"
+        },
+        {
+          "text": "Click “Search”"
+        },
+        {
+          "text": "“treasureGoblin_idle_03.ani” appears",
+          "expect": true
+        }
+      ],
+      "checks": [],
+      "status": "PASS",
+      "screenshot": "phase-13.png",
+      "seconds": 2.75
+    },
+    {
+      "name": "Select treasureGoblin_idle_03",
+      "steps": [
+        {
+          "text": "Click “treasureGoblin_idle_03.ani”"
+        },
+        {
+          "text": "“Export” appears",
+          "expect": true
+        }
+      ],
+      "checks": [],
+      "status": "PASS",
+      "screenshot": "phase-14.png",
+      "seconds": 1.781
+    },
+    {
+      "name": "Open the Export menu for treasureGoblin_idle_03",
+      "steps": [
+        {
+          "text": "Click “Export”"
+        },
+        {
+          "text": "“Export Animation (glTF)” appears",
+          "expect": true
+        }
+      ],
+      "checks": [],
+      "status": "PASS",
+      "screenshot": "phase-15.png",
+      "seconds": 1.781
+    },
+    {
+      "name": "Export treasureGoblin_idle_03 as glTF",
+      "steps": [
+        {
+          "text": "Click “Export Animation (glTF)”"
+        },
+        {
+          "text": "A “Save As” window appears",
+          "expect": true
+        }
+      ],
+      "checks": [],
+      "status": "PASS",
+      "screenshot": "phase-16.png",
+      "seconds": 1.75
+    },
+    {
+      "name": "Save treasureGoblin_idle_03.glb",
+      "steps": [
+        {
+          "text": "Type \"goblin\\treasureGoblin_idle_03.glb\" into “File name:”"
+        },
+        {
+          "text": "Press Return"
+        },
+        {
+          "text": "Pause 1 s",
+          "pause": true
+        }
+      ],
+      "checks": [],
+      "status": "PASS",
+      "seconds": 3.625
+    },
+    {
+      "name": "Find treasureGoblin_GetHit",
+      "steps": [
+        {
+          "text": "Type \"treasureGoblin_GetHit.ani\" into “Search files”"
+        },
+        {
+          "text": "Click “Search”"
+        },
+        {
+          "text": "“treasureGoblin_GetHit.ani” appears",
+          "expect": true
+        }
+      ],
+      "checks": [],
+      "status": "PASS",
+      "screenshot": "phase-18.png",
+      "seconds": 2.735
+    },
+    {
+      "name": "Select treasureGoblin_GetHit",
+      "steps": [
+        {
+          "text": "Click “treasureGoblin_GetHit.ani”"
+        },
+        {
+          "text": "“Export” appears",
+          "expect": true
+        }
+      ],
+      "checks": [],
+      "status": "PASS",
+      "screenshot": "phase-19.png",
+      "seconds": 1.781
+    },
+    {
+      "name": "Open the Export menu for treasureGoblin_GetHit",
+      "steps": [
+        {
+          "text": "Click “Export”"
+        },
+        {
+          "text": "“Export Animation (glTF)” appears",
+          "expect": true
+        }
+      ],
+      "checks": [],
+      "status": "PASS",
+      "screenshot": "phase-20.png",
+      "seconds": 1.781
+    },
+    {
+      "name": "Export treasureGoblin_GetHit as glTF",
+      "steps": [
+        {
+          "text": "Click “Export Animation (glTF)”"
+        },
+        {
+          "text": "A “Save As” window appears",
+          "expect": true
+        }
+      ],
+      "checks": [],
+      "status": "PASS",
+      "screenshot": "phase-21.png",
+      "seconds": 1.766
+    },
+    {
+      "name": "Save treasureGoblin_GetHit.glb",
+      "steps": [
+        {
+          "text": "Type \"goblin\\treasureGoblin_GetHit.glb\" into “File name:”"
+        },
+        {
+          "text": "Press Return"
+        },
+        {
+          "text": "Pause 1 s",
+          "pause": true
+        }
+      ],
+      "checks": [],
+      "status": "PASS",
+      "seconds": 3.625
+    },
+    {
+      "name": "Find treasureGoblin_KnockBack",
+      "steps": [
+        {
+          "text": "Type \"treasureGoblin_KnockBack.ani\" into “Search files”"
+        },
+        {
+          "text": "Click “Search”"
+        },
+        {
+          "text": "“treasureGoblin_KnockBack.ani” appears",
+          "expect": true
+        }
+      ],
+      "checks": [],
+      "status": "PASS",
+      "screenshot": "phase-23.png",
+      "seconds": 2.734
+    },
+    {
+      "name": "Select treasureGoblin_KnockBack",
+      "steps": [
+        {
+          "text": "Click “treasureGoblin_KnockBack.ani”"
+        },
+        {
+          "text": "“Export” appears",
+          "expect": true
+        }
+      ],
+      "checks": [],
+      "status": "PASS",
+      "screenshot": "phase-24.png",
+      "seconds": 1.797
+    },
+    {
+      "name": "Open the Export menu for treasureGoblin_KnockBack",
+      "steps": [
+        {
+          "text": "Click “Export”"
+        },
+        {
+          "text": "“Export Animation (glTF)” appears",
+          "expect": true
+        }
+      ],
+      "checks": [],
+      "status": "PASS",
+      "screenshot": "phase-25.png",
+      "seconds": 1.766
+    },
+    {
+      "name": "Export treasureGoblin_KnockBack as glTF",
+      "steps": [
+        {
+          "text": "Click “Export Animation (glTF)”"
+        },
+        {
+          "text": "A “Save As” window appears",
+          "expect": true
+        }
+      ],
+      "checks": [],
+      "status": "PASS",
+      "screenshot": "phase-26.png",
+      "seconds": 1.765
+    },
+    {
+      "name": "Save treasureGoblin_KnockBack.glb",
+      "steps": [
+        {
+          "text": "Type \"goblin\\treasureGoblin_KnockBack.glb\" into “File name:”"
+        },
+        {
+          "text": "Press Return"
+        },
+        {
+          "text": "Pause 1 s",
+          "pause": true
+        }
+      ],
+      "checks": [],
+      "status": "PASS",
+      "seconds": 3.641
+    },
+    {
+      "name": "Find treasureGoblin_Knockback_land",
+      "steps": [
+        {
+          "text": "Type \"treasureGoblin_Knockback_land.ani\" into “Search files”"
+        },
+        {
+          "text": "Click “Search”"
+        },
+        {
+          "text": "“treasureGoblin_Knockback_land.ani” appears",
+          "expect": true
+        }
+      ],
+      "checks": [],
+      "status": "PASS",
+      "screenshot": "phase-28.png",
+      "seconds": 2.719
+    },
+    {
+      "name": "Select treasureGoblin_Knockback_land",
+      "steps": [
+        {
+          "text": "Click “treasureGoblin_Knockback_land.ani”"
+        },
+        {
+          "text": "“Export” appears",
+          "expect": true
+        }
+      ],
+      "checks": [],
+      "status": "PASS",
+      "screenshot": "phase-29.png",
+      "seconds": 1.765
+    },
+    {
+      "name": "Open the Export menu for treasureGoblin_Knockback_land",
+      "steps": [
+        {
+          "text": "Click “Export”"
+        },
+        {
+          "text": "“Export Animation (glTF)” appears",
+          "expect": true
+        }
+      ],
+      "checks": [],
+      "status": "PASS",
+      "screenshot": "phase-30.png",
+      "seconds": 1.797
+    },
+    {
+      "name": "Export treasureGoblin_Knockback_land as glTF",
+      "steps": [
+        {
+          "text": "Click “Export Animation (glTF)”"
+        },
+        {
+          "text": "A “Save As” window appears",
+          "expect": true
+        }
+      ],
+      "checks": [],
+      "status": "PASS",
+      "screenshot": "phase-31.png",
+      "seconds": 1.766
+    },
+    {
+      "name": "Save treasureGoblin_Knockback_land.glb",
+      "steps": [
+        {
+          "text": "Type \"goblin\\treasureGoblin_Knockback_land.glb\" into “File name:”"
+        },
+        {
+          "text": "Press Return"
+        },
+        {
+          "text": "Pause 1 s",
+          "pause": true
+        }
+      ],
+      "checks": [],
+      "status": "PASS",
+      "seconds": 3.625
+    },
+    {
+      "name": "Find treasureGoblin_Stunned",
+      "steps": [
+        {
+          "text": "Type \"treasureGoblin_Stunned.ani\" into “Search files”"
+        },
+        {
+          "text": "Click “Search”"
+        },
+        {
+          "text": "“treasureGoblin_Stunned.ani” appears",
+          "expect": true
+        }
+      ],
+      "checks": [],
+      "status": "PASS",
+      "screenshot": "phase-33.png",
+      "seconds": 2.734
+    },
+    {
+      "name": "Select treasureGoblin_Stunned",
+      "steps": [
+        {
+          "text": "Click “treasureGoblin_Stunned.ani”"
+        },
+        {
+          "text": "“Export” appears",
+          "expect": true
+        }
+      ],
+      "checks": [],
+      "status": "PASS",
+      "screenshot": "phase-34.png",
+      "seconds": 1.766
+    },
+    {
+      "name": "Open the Export menu for treasureGoblin_Stunned",
+      "steps": [
+        {
+          "text": "Click “Export”"
+        },
+        {
+          "text": "“Export Animation (glTF)” appears",
+          "expect": true
+        }
+      ],
+      "checks": [],
+      "status": "PASS",
+      "screenshot": "phase-35.png",
+      "seconds": 1.781
+    },
+    {
+      "name": "Export treasureGoblin_Stunned as glTF",
+      "steps": [
+        {
+          "text": "Click “Export Animation (glTF)”"
+        },
+        {
+          "text": "A “Save As” window appears",
+          "expect": true
+        }
+      ],
+      "checks": [],
+      "status": "PASS",
+      "screenshot": "phase-36.png",
+      "seconds": 1.766
+    },
+    {
+      "name": "Save treasureGoblin_Stunned.glb",
+      "steps": [
+        {
+          "text": "Type \"goblin\\treasureGoblin_Stunned.glb\" into “File name:”"
+        },
+        {
+          "text": "Press Return"
+        },
+        {
+          "text": "Pause 1 s",
+          "pause": true
+        }
+      ],
+      "checks": [],
+      "status": "PASS",
+      "seconds": 3.625
+    }
+  ],
+  "checks": [
+    "`n=$(ls goblin/treasureGoblin_*.glb 2>/dev/null | wc -l); [ \"$n\" -eq 7 ]` succeeds"
+  ],
+  "window": "8393308",
+  "screenshots": [
+    "phase-1.png",
+    "phase-2.png",
+    "phase-3.png",
+    "phase-4.png",
+    "phase-5.png",
+    "phase-6.png",
+    "phase-8.png",
+    "phase-9.png",
+    "phase-10.png",
+    "phase-11.png",
+    "phase-13.png",
+    "phase-14.png",
+    "phase-15.png",
+    "phase-16.png",
+    "phase-18.png",
+    "phase-19.png",
+    "phase-20.png",
+    "phase-21.png",
+    "phase-23.png",
+    "phase-24.png",
+    "phase-25.png",
+    "phase-26.png",
+    "phase-28.png",
+    "phase-29.png",
+    "phase-30.png",
+    "phase-31.png",
+    "phase-33.png",
+    "phase-34.png",
+    "phase-35.png",
+    "phase-36.png"
+  ],
+  "finished_at": "2026-11-16T16:52:01-08:00",
+  "seconds": 103.64
+}

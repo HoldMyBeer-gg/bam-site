@@ -139,17 +139,17 @@
       <div>
         <h2><span class="n">04</span>A report you'll actually read</h2>
         <p class="sub">Every step in plain words, ticked off or marked where it went wrong, with a screenshot after each part. Failures come first.</p>
-<pre class="term"><span class="p">$</span> bad-ass-mcp run smoke/ --config bam.json
+<pre class="term"><span class="p">$</span> bad-ass-mcp run goblin/ --config suite.json
 <span style="color:#5455ed">[</span><span style="color:#21c842">███████████████</span><span style="color:#d4524d">███████████████</span><span style="color:#5455ed">]</span> <span style="color:#e6ce80">100% done</span> · <span class="ok">1 passed</span> · <span class="bad">1 failed</span>
-<span class="ok">PASS    </span> font-picker-escape  (27.0s)
-<span class="bad">FAIL    </span> b-deliberately-broken  (23.5s)
-         element not found: done (name 'Done and dusted')
+<span class="ok">PASS    </span> 01-rustydemon  (1m44s)
+<span class="bad">FAIL    </span> 02-greed-export-deliberately-broken  (20.0s)
+         wait_for_element failed: timed out after 5s waiting for name='Export As FBX'
 
-1 passed, 1 failed in 50.0s  ·  macos  ·  commit 79a8a8d
+1 passed, 1 failed  ·  windows  ·  commit f129f86
 report: bam-results/…/report.html</pre>
         <div class="report-card" style="margin-top:16px">
           <h3>Open a real report</h3>
-          <p>From a real run on a Mac: one test passes, one was broken on purpose so you can see what a failure looks like. Click any screenshot to flip through them.</p>
+          <p>From a real run on Windows, the first step of a Diablo III to Skyrim mod pipeline: Rusty Demon exports the treasure goblin's seven animations, then a second script, broken on purpose, waits for an FBX export the app doesn't have. The failure leaves fail.png, tree.json (the window's accessibility tree when it broke) and result.json naming the phase, step and reason. Click any screenshot to flip through them.</p>
           <a class="btn ghost" href="report/report.html">Open the report →</a>
         </div>
       </div>

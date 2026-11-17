@@ -1,0 +1,134 @@
+[
+ {
+  "t": 3.0,
+  "event": "phase",
+  "name": "Place the window and find Greed",
+  "number": 1
+ },
+ {
+  "t": 3.406,
+  "event": "step",
+  "phase": "Place the window and find Greed",
+  "action": "shell",
+  "target": null,
+  "bounds": null
+ },
+ {
+  "t": 4.828,
+  "event": "step",
+  "phase": "Place the window and find Greed",
+  "action": "sleep",
+  "target": null,
+  "bounds": null
+ },
+ {
+  "t": 6.125,
+  "event": "step",
+  "phase": "Place the window and find Greed",
+  "action": "type",
+  "target": "search",
+  "bounds": [
+   249.0,
+   80.0,
+   300.0,
+   25.0
+  ]
+ },
+ {
+  "t": 7.078,
+  "event": "step",
+  "phase": "Place the window and find Greed",
+  "action": "click",
+  "target": "go",
+  "bounds": [
+   555.0,
+   80.0,
+   62.0,
+   25.0
+  ]
+ },
+ {
+  "t": 7.968,
+  "event": "step",
+  "phase": "Place the window and find Greed",
+  "action": "wait_for_element",
+  "target": null,
+  "bounds": null
+ },
+ {
+  "t": 8.859,
+  "event": "phase",
+  "name": "Preview Greed",
+  "number": 2
+ },
+ {
+  "t": 8.875,
+  "event": "step",
+  "phase": "Preview Greed",
+  "action": "click",
+  "target": "app",
+  "bounds": [
+   477.0,
+   194.0,
+   1092.0,
+   40.0
+  ]
+ },
+ {
+  "t": 9.765,
+  "event": "step",
+  "phase": "Preview Greed",
+  "action": "wait_for_element",
+  "target": null,
+  "bounds": null
+ },
+ {
+  "t": 10.578,
+  "event": "step",
+  "phase": "Preview Greed",
+  "action": "sleep",
+  "target": null,
+  "bounds": null
+ },
+ {
+  "t": 12.453,
+  "event": "phase",
+  "name": "Open the Export menu",
+  "number": 3
+ },
+ {
+  "t": 12.468,
+  "event": "step",
+  "phase": "Open the Export menu",
+  "action": "click",
+  "target": "menu",
+  "bounds": [
+   1586.0,
+   1172.0,
+   59.0,
+   25.0
+  ]
+ },
+ {
+  "t": 13.359,
+  "event": "step",
+  "phase": "Open the Export menu",
+  "action": "wait_for_element",
+  "target": null,
+  "bounds": null
+ },
+ {
+  "t": 14.265,
+  "event": "phase",
+  "name": "Export Greed as FBX (this item does not exist)",
+  "number": 4
+ },
+ {
+  "t": 14.265,
+  "event": "step",
+  "phase": "Export Greed as FBX (this item does not exist)",
+  "action": "wait_for_element",
+  "target": null,
+  "bounds": null
+ }
+]

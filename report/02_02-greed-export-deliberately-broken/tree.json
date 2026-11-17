@@ -1,0 +1,704 @@
+{
+ "id": "c1b8ec23-1f76-4e7c-8db4-011f8597ec21",
+ "role": "window",
+ "name": "Rusty Demon - CASC & MPK Explorer",
+ "value": null,
+ "states": [
+  "enabled",
+  "focused",
+  "visible"
+ ],
+ "children": [
+  {
+   "id": "f5e957a6-143c-480b-b9ba-27459d761b4b",
+   "role": "titlebar",
+   "name": "",
+   "value": "Rusty Demon - CASC & MPK Explorer",
+   "states": [
+    "enabled",
+    "visible"
+   ],
+   "children": [
+    {
+     "id": "cf80d3d9-035c-4290-8598-dfa8cdba917a",
+     "role": "menubar",
+     "name": "System",
+     "value": null,
+     "states": [
+      "enabled",
+      "visible"
+     ],
+     "children": [
+      {
+       "id": "137e3359-f8ed-4dbf-98a2-095f43df32d4",
+       "role": "menuitem",
+       "name": "System",
+       "value": null,
+       "states": [
+        "enabled",
+        "visible"
+       ],
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "ab6f470b-e83e-4905-95c2-f61cc3ece225",
+     "role": "button",
+     "name": "Minimize",
+     "value": null,
+     "states": [
+      "enabled",
+      "visible"
+     ],
+     "children": []
+    },
+    {
+     "id": "577f3413-87cc-4435-8364-857a7a81f616",
+     "role": "button",
+     "name": "Maximize",
+     "value": null,
+     "states": [
+      "enabled",
+      "visible"
+     ],
+     "children": []
+    },
+    {
+     "id": "416d802d-8173-467e-9db7-8d015faaa71e",
+     "role": "button",
+     "name": "Close",
+     "value": null,
+     "states": [
+      "enabled",
+      "visible"
+     ],
+     "children": []
+    }
+   ]
+  },
+  {
+   "id": "53d6a7db-42e2-4631-8a19-cff14725470e",
+   "role": "menu",
+   "name": "",
+   "value": null,
+   "states": [
+    "enabled",
+    "visible"
+   ],
+   "children": [
+    {
+     "id": "120d7e8f-f5e4-4333-92e3-2bed7c31e339",
+     "role": "button",
+     "name": "File",
+     "value": null,
+     "states": [
+      "enabled",
+      "visible"
+     ],
+     "children": []
+    },
+    {
+     "id": "b235bec4-efd3-4c7c-8574-c21d86f24c78",
+     "role": "button",
+     "name": "Edit",
+     "value": null,
+     "states": [
+      "enabled",
+      "visible"
+     ],
+     "children": []
+    },
+    {
+     "id": "b855c203-c336-4dd9-9230-3ed03d34cc77",
+     "role": "button",
+     "name": "View",
+     "value": null,
+     "states": [
+      "enabled",
+      "visible"
+     ],
+     "children": []
+    },
+    {
+     "id": "86642e6a-afbf-4d82-8546-feccd52e1fe5",
+     "role": "button",
+     "name": "Tools",
+     "value": null,
+     "states": [
+      "enabled",
+      "visible"
+     ],
+     "children": []
+    },
+    {
+     "id": "4770a342-9d38-4980-bfc8-de272a59ea0f",
+     "role": "button",
+     "name": "Help",
+     "value": null,
+     "states": [
+      "enabled",
+      "visible"
+     ],
+     "children": []
+    }
+   ]
+  },
+  {
+   "id": "5357ba9b-88c5-4547-a2e0-febf436990fd",
+   "role": "statusbar",
+   "name": "1 results for \"p1_Greed.app\"",
+   "value": null,
+   "states": [
+    "enabled",
+    "visible"
+   ],
+   "children": []
+  },
+  {
+   "id": "17c91753-d835-4542-bd56-396044f3bec0",
+   "role": "textfield",
+   "name": "Search files",
+   "value": "p1_Greed.app",
+   "states": [
+    "editable",
+    "enabled",
+    "visible"
+   ],
+   "children": []
+  },
+  {
+   "id": "853df590-5a09-4871-b575-a825d11a73a5",
+   "role": "button",
+   "name": "Search",
+   "value": null,
+   "states": [
+    "enabled",
+    "visible"
+   ],
+   "children": []
+  },
+  {
+   "id": "bc3404cc-0875-49af-80a7-0a066d0dbc3a",
+   "role": "checkbox",
+   "name": "Deep search",
+   "value": null,
+   "states": [
+    "enabled",
+    "visible"
+   ],
+   "children": []
+  },
+  {
+   "id": "07e194bb-6a9c-4e0d-b2e5-02c676ddb4d7",
+   "role": "button",
+   "name": "Find All (Deep Search)",
+   "value": null,
+   "states": [
+    "enabled",
+    "visible"
+   ],
+   "children": []
+  },
+  {
+   "id": "e53592da-7e77-4c14-895e-e97ea280204f",
+   "role": "button",
+   "name": "Increase text size",
+   "value": null,
+   "states": [
+    "enabled",
+    "visible"
+   ],
+   "children": []
+  },
+  {
+   "id": "671214fa-9a4e-4863-aea9-e18cb4a1cafe",
+   "role": "button",
+   "name": "Decrease text size",
+   "value": null,
+   "states": [
+    "enabled",
+    "visible"
+   ],
+   "children": []
+  },
+  {
+   "id": "26704988-f14a-4565-b08a-d9b9f2122e26",
+   "role": "text",
+   "name": "File Browser",
+   "value": null,
+   "states": [
+    "enabled",
+    "visible"
+   ],
+   "children": []
+  },
+  {
+   "id": "bd94186f-f5dc-4520-807c-14f907974e76",
+   "role": "text",
+   "name": "DIABLO3",
+   "value": null,
+   "states": [
+    "enabled",
+    "visible"
+   ],
+   "children": []
+  },
+  {
+   "id": "5390fc93-49b6-42b5-9b22-5cdc2141700f",
+   "role": "button",
+   "name": "Collapse Game Root",
+   "value": null,
+   "states": [
+    "enabled",
+    "visible"
+   ],
+   "children": []
+  },
+  {
+   "id": "5fd7e056-9a6a-4ac6-a034-610ef19aff23",
+   "role": "button",
+   "name": "Game Root",
+   "value": null,
+   "states": [
+    "enabled",
+    "visible"
+   ],
+   "children": []
+  },
+  {
+   "id": "0f9375a8-3bbf-43d8-af44-a616b72655e4",
+   "role": "button",
+   "name": "Expand base",
+   "value": null,
+   "states": [
+    "enabled",
+    "visible"
+   ],
+   "children": []
+  },
+  {
+   "id": "a98e5d64-38a9-4e17-a11d-be3977c207d2",
+   "role": "button",
+   "name": "base",
+   "value": null,
+   "states": [
+    "enabled",
+    "visible"
+   ],
+   "children": []
+  },
+  {
+   "id": "9882c884-1e65-4738-9373-9669e087b70e",
+   "role": "button",
+   "name": "Expand enus",
+   "value": null,
+   "states": [
+    "enabled",
+    "visible"
+   ],
+   "children": []
+  },
+  {
+   "id": "bac83d8e-654a-496e-aa68-3cea61753720",
+   "role": "button",
+   "name": "enus",
+   "value": null,
+   "states": [
+    "enabled",
+    "visible"
+   ],
+   "children": []
+  },
+  {
+   "id": "8cf88ccc-5d52-49e1-87cf-6b5e98a45c10",
+   "role": "button",
+   "name": "Expand windows",
+   "value": null,
+   "states": [
+    "enabled",
+    "visible"
+   ],
+   "children": []
+  },
+  {
+   "id": "14624017-becc-448c-b120-80183650d343",
+   "role": "button",
+   "name": "windows",
+   "value": null,
+   "states": [
+    "enabled",
+    "visible"
+   ],
+   "children": []
+  },
+  {
+   "id": "c73fef37-afff-4f12-8623-82daa8f4e721",
+   "role": "separator",
+   "name": "Resize panel",
+   "value": null,
+   "states": [
+    "enabled",
+    "visible"
+   ],
+   "children": []
+  },
+  {
+   "id": "083252d6-44cd-4de7-ad22-18c99baa0b08",
+   "role": "text",
+   "name": "Details / Preview",
+   "value": null,
+   "states": [
+    "enabled",
+    "visible"
+   ],
+   "children": []
+  },
+  {
+   "id": "b9056ba0-7e4c-4c27-a333-bb77da8a4c8f",
+   "role": "text",
+   "name": "APP",
+   "value": null,
+   "states": [
+    "enabled",
+    "visible"
+   ],
+   "children": []
+  },
+  {
+   "id": "3090df39-ff0b-4ff6-abb9-79a1f66dd338",
+   "role": "text",
+   "name": "Name:",
+   "value": null,
+   "states": [
+    "enabled",
+    "visible"
+   ],
+   "children": []
+  },
+  {
+   "id": "b4dd194e-8f8b-421c-8211-add29173e56a",
+   "role": "text",
+   "name": "p1_Greed.app",
+   "value": null,
+   "states": [
+    "enabled",
+    "visible"
+   ],
+   "children": []
+  },
+  {
+   "id": "efac6a5b-5147-4c76-a05c-60904690814c",
+   "role": "text",
+   "name": "Type:",
+   "value": null,
+   "states": [
+    "enabled",
+    "visible"
+   ],
+   "children": []
+  },
+  {
+   "id": "bc0f28c7-1951-4e2b-9bba-a24f8256be50",
+   "role": "text",
+   "name": "APP",
+   "value": null,
+   "states": [
+    "enabled",
+    "visible"
+   ],
+   "children": []
+  },
+  {
+   "id": "fdbde7ab-a457-4eeb-bdfe-160aebe8ebd5",
+   "role": "text",
+   "name": "Hash:",
+   "value": null,
+   "states": [
+    "enabled",
+    "visible"
+   ],
+   "children": []
+  },
+  {
+   "id": "8a9d0ad8-0edd-435e-a798-cf34a6be18af",
+   "role": "text",
+   "name": "F6C579C7C77FED71",
+   "value": null,
+   "states": [
+    "enabled",
+    "visible"
+   ],
+   "children": []
+  },
+  {
+   "id": "f3641192-fae6-4546-a76f-219eae8c2e04",
+   "role": "text",
+   "name": "CKey:",
+   "value": null,
+   "states": [
+    "enabled",
+    "visible"
+   ],
+   "children": []
+  },
+  {
+   "id": "e8e27fc2-4217-4d3b-a9be-a0e483a2a81c",
+   "role": "text",
+   "name": "50C11357B48305EA",
+   "value": null,
+   "states": [
+    "enabled",
+    "visible"
+   ],
+   "children": []
+  },
+  {
+   "id": "7f5748c8-c477-4c40-baca-8beb2988d488",
+   "role": "text",
+   "name": "Locale:",
+   "value": null,
+   "states": [
+    "enabled",
+    "visible"
+   ],
+   "children": []
+  },
+  {
+   "id": "c08a0a3e-2cca-4ffe-94e3-b35baf6d478b",
+   "role": "text",
+   "name": "LocaleFlags(UNK1 | EN_US | KO_KR | UNK8 | FR_FR | DE_DE | ZH_CN | ES_ES | ZH_TW | EN_GB | EN_CN | EN_TW | ES_MX | RU_RU | PT_BR | IT_IT | PT_PT | ALL)",
+   "value": null,
+   "states": [
+    "enabled",
+    "visible"
+   ],
+   "children": []
+  },
+  {
+   "id": "4485fc09-435c-4dbb-ab62-c9f41156940c",
+   "role": "text",
+   "name": "Size:",
+   "value": null,
+   "states": [
+    "enabled",
+    "visible"
+   ],
+   "children": []
+  },
+  {
+   "id": "32af4218-8b0e-4a83-a3ca-3dc64fcc18a3",
+   "role": "text",
+   "name": "543.4 KiB",
+   "value": null,
+   "states": [
+    "enabled",
+    "visible"
+   ],
+   "children": []
+  },
+  {
+   "id": "1a476993-1223-4a03-a4b8-f2668a58fb27",
+   "role": "text",
+   "name": "Viewer",
+   "value": null,
+   "states": [
+    "enabled",
+    "visible"
+   ],
+   "children": []
+  },
+  {
+   "id": "233e7636-25cb-43df-aa67-5deab04722b6",
+   "role": "combobox",
+   "name": "Viewer",
+   "value": "Auto",
+   "states": [
+    "editable",
+    "enabled",
+    "visible"
+   ],
+   "children": []
+  },
+  {
+   "id": "9a647ea8-8755-40c6-80ba-f12bef46f0ac",
+   "role": "text",
+   "name": "Mesh",
+   "value": null,
+   "states": [
+    "enabled",
+    "visible"
+   ],
+   "children": []
+  },
+  {
+   "id": "f24f470b-1cbf-4f71-90a5-851f97e8fec1",
+   "role": "image",
+   "name": "3D preview: drag to rotate, Shift+drag to pan, scroll to zoom",
+   "value": null,
+   "states": [
+    "enabled",
+    "visible"
+   ],
+   "children": []
+  },
+  {
+   "id": "fe2fad16-98f0-494a-a159-d2aa790a610b",
+   "role": "text",
+   "name": "Text",
+   "value": null,
+   "states": [
+    "enabled",
+    "visible"
+   ],
+   "children": []
+  },
+  {
+   "id": "6fe6eb03-0f55-4ad9-8b73-61c592da31ed",
+   "role": "textfield",
+   "name": "File contents",
+   "value": "Diablo III model: 67 bones, 7 parts\n\nParts (drawn marked *):\n   FX_EMIT (99 vertices, no colour map found)\n   FX_EMIT (81 vertices, no colour map found)\n * A_normal_cloth (78 vertices, 2048x2048 colour map)\n * A_normal_mat (4552 vertices, 2048x2048 colour map)\n   A_offhand_mat (422 vertices, 2048x2048 colour map)\n   A_weapon_mat (552 vertices, 512x512 colour map)\n   FX_EMIT (196 vertices, no colour map found)\n\nLooks: A, telegraph, invisible, A_noWeapon\n",
+   "states": [
+    "editable",
+    "enabled",
+    "visible"
+   ],
+   "children": []
+  },
+  {
+   "id": "47e50fba-afbe-4f03-b3a1-d1aa96e98456",
+   "role": "text",
+   "name": "Export",
+   "value": null,
+   "states": [
+    "enabled",
+    "visible"
+   ],
+   "children": []
+  },
+  {
+   "id": "dcdf3db2-28f4-4b01-8e32-655239eef5f3",
+   "role": "button",
+   "name": "Export",
+   "value": null,
+   "states": [
+    "enabled",
+    "visible"
+   ],
+   "children": [
+    {
+     "id": "4c9df9ab-8c6d-4045-80e5-2f5e104bc725",
+     "role": "menu",
+     "name": "",
+     "value": null,
+     "states": [
+      "enabled",
+      "visible"
+     ],
+     "children": [
+      {
+       "id": "92c9789f-2eb4-4fc7-9627-4c43f2574db3",
+       "role": "button",
+       "name": "Export As glTF (rigged)",
+       "value": null,
+       "states": [
+        "enabled",
+        "visible"
+       ],
+       "children": []
+      },
+      {
+       "id": "ec95d98d-5809-426f-b2b1-e795236b067f",
+       "role": "button",
+       "name": "Export Raw",
+       "value": null,
+       "states": [
+        "enabled",
+        "visible"
+       ],
+       "children": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d71d7e24-d123-4c44-a071-ad55986f4057",
+   "role": "separator",
+   "name": "Resize panel",
+   "value": null,
+   "states": [
+    "enabled",
+    "visible"
+   ],
+   "children": []
+  },
+  {
+   "id": "d004f9e4-d47f-4c0b-a945-c6ccbd2b0b06",
+   "role": "text",
+   "name": "Search Results",
+   "value": null,
+   "states": [
+    "enabled",
+    "visible"
+   ],
+   "children": []
+  },
+  {
+   "id": "f335adc2-84ab-46db-924a-4e82e265a4b3",
+   "role": "text",
+   "name": "1 hits",
+   "value": null,
+   "states": [
+    "enabled",
+    "visible"
+   ],
+   "children": []
+  },
+  {
+   "id": "9bb5934e-f469-4ad0-999d-b115898cc3e0",
+   "role": "button",
+   "name": "Export 1 Selected",
+   "value": null,
+   "states": [
+    "enabled",
+    "visible"
+   ],
+   "children": []
+  },
+  {
+   "id": "63479654-c24e-4cd1-a230-e4a07ee1924c",
+   "role": "button",
+   "name": "Clear Selection",
+   "value": null,
+   "states": [
+    "enabled",
+    "visible"
+   ],
+   "children": []
+  },
+  {
+   "id": "8798c703-48f5-4139-8df1-572eec14a81f",
+   "role": "button",
+   "name": "Select All",
+   "value": null,
+   "states": [
+    "enabled",
+    "visible"
+   ],
+   "children": []
+  },
+  {
+   "id": "df14c4ed-c5c0-44fe-b091-5e8c83300dcb",
+   "role": "button",
+   "name": "p1_Greed.app",
+   "value": null,
+   "states": [
+    "checked",
+    "enabled",
+    "visible"
+   ],
+   "children": []
+  }
+ ]
+}
